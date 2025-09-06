@@ -7,3 +7,4 @@ ray
 *.dylib
 *.dll
 vls.log
+.idea
