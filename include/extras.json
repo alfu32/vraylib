@@ -1,0 +1,5412 @@
+{
+  "id": "0x5f7a9b2bfcc8",
+  "kind": "TranslationUnitDecl",
+  "loc": {},
+  "range": {
+    "begin": {},
+    "end": {}
+  },
+  "inner": [
+    {
+      "id": "0x5f7a9b2c04f0",
+      "kind": "TypedefDecl",
+      "loc": {},
+      "range": {
+        "begin": {},
+        "end": {}
+      },
+      "isImplicit": true,
+      "name": "__int128_t",
+      "type": {
+        "qualType": "__int128"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b2c0290",
+          "kind": "BuiltinType",
+          "type": {
+            "qualType": "__int128"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b2c0560",
+      "kind": "TypedefDecl",
+      "loc": {},
+      "range": {
+        "begin": {},
+        "end": {}
+      },
+      "isImplicit": true,
+      "name": "__uint128_t",
+      "type": {
+        "qualType": "unsigned __int128"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b2c02b0",
+          "kind": "BuiltinType",
+          "type": {
+            "qualType": "unsigned __int128"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b2c0868",
+      "kind": "TypedefDecl",
+      "loc": {},
+      "range": {
+        "begin": {},
+        "end": {}
+      },
+      "isImplicit": true,
+      "name": "__NSConstantString",
+      "type": {
+        "qualType": "struct __NSConstantString_tag"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b2c0640",
+          "kind": "RecordType",
+          "type": {
+            "qualType": "struct __NSConstantString_tag"
+          },
+          "decl": {
+            "id": "0x5f7a9b2c05b8",
+            "kind": "RecordDecl",
+            "name": "__NSConstantString_tag"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b2c0900",
+      "kind": "TypedefDecl",
+      "loc": {},
+      "range": {
+        "begin": {},
+        "end": {}
+      },
+      "isImplicit": true,
+      "name": "__builtin_ms_va_list",
+      "type": {
+        "qualType": "char *"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b2c08c0",
+          "kind": "PointerType",
+          "type": {
+            "qualType": "char *"
+          },
+          "inner": [
+            {
+              "id": "0x5f7a9b2bfd70",
+              "kind": "BuiltinType",
+              "type": {
+                "qualType": "char"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b2c0bf8",
+      "kind": "TypedefDecl",
+      "loc": {},
+      "range": {
+        "begin": {},
+        "end": {}
+      },
+      "isImplicit": true,
+      "name": "__builtin_va_list",
+      "type": {
+        "qualType": "struct __va_list_tag[1]"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b2c0ba0",
+          "kind": "ConstantArrayType",
+          "type": {
+            "qualType": "struct __va_list_tag[1]"
+          },
+          "size": 1,
+          "inner": [
+            {
+              "id": "0x5f7a9b2c09e0",
+              "kind": "RecordType",
+              "type": {
+                "qualType": "struct __va_list_tag"
+              },
+              "decl": {
+                "id": "0x5f7a9b2c0958",
+                "kind": "RecordDecl",
+                "name": "__va_list_tag"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b31df80",
+      "kind": "RecordDecl",
+      "loc": {
+        "offset": 740,
+        "file": "/home/alfu64/Development/vraylib/include/extras.h",
+        "line": 19,
+        "col": 16,
+        "tokLen": 5
+      },
+      "range": {
+        "begin": {
+          "offset": 733,
+          "col": 9,
+          "tokLen": 6
+        },
+        "end": {
+          "offset": 747,
+          "col": 23,
+          "tokLen": 1
+        }
+      },
+      "name": "Model",
+      "tagUsed": "struct",
+      "completeDefinition": true
+    },
+    {
+      "id": "0x5f7a9b31e078",
+      "kind": "TypedefDecl",
+      "loc": {
+        "offset": 749,
+        "col": 25,
+        "tokLen": 5
+      },
+      "range": {
+        "begin": {
+          "offset": 725,
+          "col": 1,
+          "tokLen": 7
+        },
+        "end": {
+          "offset": 749,
+          "col": 25,
+          "tokLen": 5
+        }
+      },
+      "isReferenced": true,
+      "name": "Model",
+      "type": {
+        "desugaredQualType": "struct Model",
+        "qualType": "struct Model"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b31e020",
+          "kind": "ElaboratedType",
+          "type": {
+            "qualType": "struct Model"
+          },
+          "ownedTagDecl": {
+            "id": "0x5f7a9b31df80",
+            "kind": "RecordDecl",
+            "name": "Model"
+          },
+          "inner": [
+            {
+              "id": "0x5f7a9b31e000",
+              "kind": "RecordType",
+              "type": {
+                "qualType": "struct Model"
+              },
+              "decl": {
+                "id": "0x5f7a9b31df80",
+                "kind": "RecordDecl",
+                "name": "Model"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b31e0e8",
+      "kind": "RecordDecl",
+      "loc": {
+        "offset": 771,
+        "line": 20,
+        "col": 16,
+        "tokLen": 14
+      },
+      "range": {
+        "begin": {
+          "offset": 764,
+          "col": 9,
+          "tokLen": 6
+        },
+        "end": {
+          "offset": 787,
+          "col": 32,
+          "tokLen": 1
+        }
+      },
+      "name": "ModelAnimation",
+      "tagUsed": "struct",
+      "completeDefinition": true
+    },
+    {
+      "id": "0x5f7a9b31e1e8",
+      "kind": "TypedefDecl",
+      "loc": {
+        "offset": 789,
+        "col": 34,
+        "tokLen": 14
+      },
+      "range": {
+        "begin": {
+          "offset": 756,
+          "col": 1,
+          "tokLen": 7
+        },
+        "end": {
+          "offset": 789,
+          "col": 34,
+          "tokLen": 14
+        }
+      },
+      "isReferenced": true,
+      "name": "ModelAnimation",
+      "type": {
+        "desugaredQualType": "struct ModelAnimation",
+        "qualType": "struct ModelAnimation"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b31e190",
+          "kind": "ElaboratedType",
+          "type": {
+            "qualType": "struct ModelAnimation"
+          },
+          "ownedTagDecl": {
+            "id": "0x5f7a9b31e0e8",
+            "kind": "RecordDecl",
+            "name": "ModelAnimation"
+          },
+          "inner": [
+            {
+              "id": "0x5f7a9b31e170",
+              "kind": "RecordType",
+              "type": {
+                "qualType": "struct ModelAnimation"
+              },
+              "decl": {
+                "id": "0x5f7a9b31e0e8",
+                "kind": "RecordDecl",
+                "name": "ModelAnimation"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b31e258",
+      "kind": "RecordDecl",
+      "loc": {
+        "offset": 820,
+        "line": 21,
+        "col": 16,
+        "tokLen": 7
+      },
+      "range": {
+        "begin": {
+          "offset": 813,
+          "col": 9,
+          "tokLen": 6
+        },
+        "end": {
+          "offset": 829,
+          "col": 25,
+          "tokLen": 1
+        }
+      },
+      "name": "Vector2",
+      "tagUsed": "struct",
+      "completeDefinition": true
+    },
+    {
+      "id": "0x5f7a9b31e358",
+      "kind": "TypedefDecl",
+      "loc": {
+        "offset": 831,
+        "col": 27,
+        "tokLen": 7
+      },
+      "range": {
+        "begin": {
+          "offset": 805,
+          "col": 1,
+          "tokLen": 7
+        },
+        "end": {
+          "offset": 831,
+          "col": 27,
+          "tokLen": 7
+        }
+      },
+      "isReferenced": true,
+      "name": "Vector2",
+      "type": {
+        "desugaredQualType": "struct Vector2",
+        "qualType": "struct Vector2"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b31e300",
+          "kind": "ElaboratedType",
+          "type": {
+            "qualType": "struct Vector2"
+          },
+          "ownedTagDecl": {
+            "id": "0x5f7a9b31e258",
+            "kind": "RecordDecl",
+            "name": "Vector2"
+          },
+          "inner": [
+            {
+              "id": "0x5f7a9b31e2e0",
+              "kind": "RecordType",
+              "type": {
+                "qualType": "struct Vector2"
+              },
+              "decl": {
+                "id": "0x5f7a9b31e258",
+                "kind": "RecordDecl",
+                "name": "Vector2"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b31e3c8",
+      "kind": "RecordDecl",
+      "loc": {
+        "offset": 855,
+        "line": 22,
+        "col": 16,
+        "tokLen": 7
+      },
+      "range": {
+        "begin": {
+          "offset": 848,
+          "col": 9,
+          "tokLen": 6
+        },
+        "end": {
+          "offset": 864,
+          "col": 25,
+          "tokLen": 1
+        }
+      },
+      "name": "Vector3",
+      "tagUsed": "struct",
+      "completeDefinition": true
+    },
+    {
+      "id": "0x5f7a9b31e4c8",
+      "kind": "TypedefDecl",
+      "loc": {
+        "offset": 866,
+        "col": 27,
+        "tokLen": 7
+      },
+      "range": {
+        "begin": {
+          "offset": 840,
+          "col": 1,
+          "tokLen": 7
+        },
+        "end": {
+          "offset": 866,
+          "col": 27,
+          "tokLen": 7
+        }
+      },
+      "isReferenced": true,
+      "name": "Vector3",
+      "type": {
+        "desugaredQualType": "struct Vector3",
+        "qualType": "struct Vector3"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b31e470",
+          "kind": "ElaboratedType",
+          "type": {
+            "qualType": "struct Vector3"
+          },
+          "ownedTagDecl": {
+            "id": "0x5f7a9b31e3c8",
+            "kind": "RecordDecl",
+            "name": "Vector3"
+          },
+          "inner": [
+            {
+              "id": "0x5f7a9b31e450",
+              "kind": "RecordType",
+              "type": {
+                "qualType": "struct Vector3"
+              },
+              "decl": {
+                "id": "0x5f7a9b31e3c8",
+                "kind": "RecordDecl",
+                "name": "Vector3"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b31e538",
+      "kind": "RecordDecl",
+      "loc": {
+        "offset": 890,
+        "line": 23,
+        "col": 16,
+        "tokLen": 11
+      },
+      "range": {
+        "begin": {
+          "offset": 883,
+          "col": 9,
+          "tokLen": 6
+        },
+        "end": {
+          "offset": 903,
+          "col": 29,
+          "tokLen": 1
+        }
+      },
+      "name": "BoundingBox",
+      "tagUsed": "struct",
+      "completeDefinition": true
+    },
+    {
+      "id": "0x5f7a9b31e638",
+      "kind": "TypedefDecl",
+      "loc": {
+        "offset": 905,
+        "col": 31,
+        "tokLen": 11
+      },
+      "range": {
+        "begin": {
+          "offset": 875,
+          "col": 1,
+          "tokLen": 7
+        },
+        "end": {
+          "offset": 905,
+          "col": 31,
+          "tokLen": 11
+        }
+      },
+      "isReferenced": true,
+      "name": "BoundingBox",
+      "type": {
+        "desugaredQualType": "struct BoundingBox",
+        "qualType": "struct BoundingBox"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b31e5e0",
+          "kind": "ElaboratedType",
+          "type": {
+            "qualType": "struct BoundingBox"
+          },
+          "ownedTagDecl": {
+            "id": "0x5f7a9b31e538",
+            "kind": "RecordDecl",
+            "name": "BoundingBox"
+          },
+          "inner": [
+            {
+              "id": "0x5f7a9b31e5c0",
+              "kind": "RecordType",
+              "type": {
+                "qualType": "struct BoundingBox"
+              },
+              "decl": {
+                "id": "0x5f7a9b31e538",
+                "kind": "RecordDecl",
+                "name": "BoundingBox"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b31e6a8",
+      "kind": "RecordDecl",
+      "loc": {
+        "offset": 933,
+        "line": 24,
+        "col": 16,
+        "tokLen": 9
+      },
+      "range": {
+        "begin": {
+          "offset": 926,
+          "col": 9,
+          "tokLen": 6
+        },
+        "end": {
+          "offset": 944,
+          "col": 27,
+          "tokLen": 1
+        }
+      },
+      "name": "Rectangle",
+      "tagUsed": "struct",
+      "completeDefinition": true
+    },
+    {
+      "id": "0x5f7a9b31e7a8",
+      "kind": "TypedefDecl",
+      "loc": {
+        "offset": 946,
+        "col": 29,
+        "tokLen": 9
+      },
+      "range": {
+        "begin": {
+          "offset": 918,
+          "col": 1,
+          "tokLen": 7
+        },
+        "end": {
+          "offset": 946,
+          "col": 29,
+          "tokLen": 9
+        }
+      },
+      "isReferenced": true,
+      "name": "Rectangle",
+      "type": {
+        "desugaredQualType": "struct Rectangle",
+        "qualType": "struct Rectangle"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b31e750",
+          "kind": "ElaboratedType",
+          "type": {
+            "qualType": "struct Rectangle"
+          },
+          "ownedTagDecl": {
+            "id": "0x5f7a9b31e6a8",
+            "kind": "RecordDecl",
+            "name": "Rectangle"
+          },
+          "inner": [
+            {
+              "id": "0x5f7a9b31e730",
+              "kind": "RecordType",
+              "type": {
+                "qualType": "struct Rectangle"
+              },
+              "decl": {
+                "id": "0x5f7a9b31e6a8",
+                "kind": "RecordDecl",
+                "name": "Rectangle"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b31e818",
+      "kind": "RecordDecl",
+      "loc": {
+        "offset": 972,
+        "line": 25,
+        "col": 16,
+        "tokLen": 5
+      },
+      "range": {
+        "begin": {
+          "offset": 965,
+          "col": 9,
+          "tokLen": 6
+        },
+        "end": {
+          "offset": 979,
+          "col": 23,
+          "tokLen": 1
+        }
+      },
+      "name": "Image",
+      "tagUsed": "struct",
+      "completeDefinition": true
+    },
+    {
+      "id": "0x5f7a9b31e918",
+      "kind": "TypedefDecl",
+      "loc": {
+        "offset": 981,
+        "col": 25,
+        "tokLen": 5
+      },
+      "range": {
+        "begin": {
+          "offset": 957,
+          "col": 1,
+          "tokLen": 7
+        },
+        "end": {
+          "offset": 981,
+          "col": 25,
+          "tokLen": 5
+        }
+      },
+      "isReferenced": true,
+      "name": "Image",
+      "type": {
+        "desugaredQualType": "struct Image",
+        "qualType": "struct Image"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b31e8c0",
+          "kind": "ElaboratedType",
+          "type": {
+            "qualType": "struct Image"
+          },
+          "ownedTagDecl": {
+            "id": "0x5f7a9b31e818",
+            "kind": "RecordDecl",
+            "name": "Image"
+          },
+          "inner": [
+            {
+              "id": "0x5f7a9b31e8a0",
+              "kind": "RecordType",
+              "type": {
+                "qualType": "struct Image"
+              },
+              "decl": {
+                "id": "0x5f7a9b31e818",
+                "kind": "RecordDecl",
+                "name": "Image"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b31e988",
+      "kind": "RecordDecl",
+      "loc": {
+        "offset": 1003,
+        "line": 26,
+        "col": 16,
+        "tokLen": 4
+      },
+      "range": {
+        "begin": {
+          "offset": 996,
+          "col": 9,
+          "tokLen": 6
+        },
+        "end": {
+          "offset": 1009,
+          "col": 22,
+          "tokLen": 1
+        }
+      },
+      "name": "Mesh",
+      "tagUsed": "struct",
+      "completeDefinition": true
+    },
+    {
+      "id": "0x5f7a9b31ea88",
+      "kind": "TypedefDecl",
+      "loc": {
+        "offset": 1011,
+        "col": 24,
+        "tokLen": 4
+      },
+      "range": {
+        "begin": {
+          "offset": 988,
+          "col": 1,
+          "tokLen": 7
+        },
+        "end": {
+          "offset": 1011,
+          "col": 24,
+          "tokLen": 4
+        }
+      },
+      "isReferenced": true,
+      "name": "Mesh",
+      "type": {
+        "desugaredQualType": "struct Mesh",
+        "qualType": "struct Mesh"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b31ea30",
+          "kind": "ElaboratedType",
+          "type": {
+            "qualType": "struct Mesh"
+          },
+          "ownedTagDecl": {
+            "id": "0x5f7a9b31e988",
+            "kind": "RecordDecl",
+            "name": "Mesh"
+          },
+          "inner": [
+            {
+              "id": "0x5f7a9b31ea10",
+              "kind": "RecordType",
+              "type": {
+                "qualType": "struct Mesh"
+              },
+              "decl": {
+                "id": "0x5f7a9b31e988",
+                "kind": "RecordDecl",
+                "name": "Mesh"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b31eaf8",
+      "kind": "RecordDecl",
+      "loc": {
+        "offset": 1032,
+        "line": 27,
+        "col": 16,
+        "tokLen": 4
+      },
+      "range": {
+        "begin": {
+          "offset": 1025,
+          "col": 9,
+          "tokLen": 6
+        },
+        "end": {
+          "offset": 1038,
+          "col": 22,
+          "tokLen": 1
+        }
+      },
+      "name": "Font",
+      "tagUsed": "struct",
+      "completeDefinition": true
+    },
+    {
+      "id": "0x5f7a9b31ebf8",
+      "kind": "TypedefDecl",
+      "loc": {
+        "offset": 1040,
+        "col": 24,
+        "tokLen": 4
+      },
+      "range": {
+        "begin": {
+          "offset": 1017,
+          "col": 1,
+          "tokLen": 7
+        },
+        "end": {
+          "offset": 1040,
+          "col": 24,
+          "tokLen": 4
+        }
+      },
+      "isReferenced": true,
+      "name": "Font",
+      "type": {
+        "desugaredQualType": "struct Font",
+        "qualType": "struct Font"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b31eba0",
+          "kind": "ElaboratedType",
+          "type": {
+            "qualType": "struct Font"
+          },
+          "ownedTagDecl": {
+            "id": "0x5f7a9b31eaf8",
+            "kind": "RecordDecl",
+            "name": "Font"
+          },
+          "inner": [
+            {
+              "id": "0x5f7a9b31eb80",
+              "kind": "RecordType",
+              "type": {
+                "qualType": "struct Font"
+              },
+              "decl": {
+                "id": "0x5f7a9b31eaf8",
+                "kind": "RecordDecl",
+                "name": "Font"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b31ec68",
+      "kind": "RecordDecl",
+      "loc": {
+        "offset": 1061,
+        "line": 28,
+        "col": 16,
+        "tokLen": 4
+      },
+      "range": {
+        "begin": {
+          "offset": 1054,
+          "col": 9,
+          "tokLen": 6
+        },
+        "end": {
+          "offset": 1067,
+          "col": 22,
+          "tokLen": 1
+        }
+      },
+      "name": "Wave",
+      "tagUsed": "struct",
+      "completeDefinition": true
+    },
+    {
+      "id": "0x5f7a9b31ed68",
+      "kind": "TypedefDecl",
+      "loc": {
+        "offset": 1069,
+        "col": 24,
+        "tokLen": 4
+      },
+      "range": {
+        "begin": {
+          "offset": 1046,
+          "col": 1,
+          "tokLen": 7
+        },
+        "end": {
+          "offset": 1069,
+          "col": 24,
+          "tokLen": 4
+        }
+      },
+      "isReferenced": true,
+      "name": "Wave",
+      "type": {
+        "desugaredQualType": "struct Wave",
+        "qualType": "struct Wave"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b31ed10",
+          "kind": "ElaboratedType",
+          "type": {
+            "qualType": "struct Wave"
+          },
+          "ownedTagDecl": {
+            "id": "0x5f7a9b31ec68",
+            "kind": "RecordDecl",
+            "name": "Wave"
+          },
+          "inner": [
+            {
+              "id": "0x5f7a9b31ecf0",
+              "kind": "RecordType",
+              "type": {
+                "qualType": "struct Wave"
+              },
+              "decl": {
+                "id": "0x5f7a9b31ec68",
+                "kind": "RecordDecl",
+                "name": "Wave"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b31edd8",
+      "kind": "RecordDecl",
+      "loc": {
+        "offset": 1090,
+        "line": 29,
+        "col": 16,
+        "tokLen": 5
+      },
+      "range": {
+        "begin": {
+          "offset": 1083,
+          "col": 9,
+          "tokLen": 6
+        },
+        "end": {
+          "offset": 1097,
+          "col": 23,
+          "tokLen": 1
+        }
+      },
+      "name": "Sound",
+      "tagUsed": "struct",
+      "completeDefinition": true
+    },
+    {
+      "id": "0x5f7a9b31eed8",
+      "kind": "TypedefDecl",
+      "loc": {
+        "offset": 1099,
+        "col": 25,
+        "tokLen": 5
+      },
+      "range": {
+        "begin": {
+          "offset": 1075,
+          "col": 1,
+          "tokLen": 7
+        },
+        "end": {
+          "offset": 1099,
+          "col": 25,
+          "tokLen": 5
+        }
+      },
+      "isReferenced": true,
+      "name": "Sound",
+      "type": {
+        "desugaredQualType": "struct Sound",
+        "qualType": "struct Sound"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b31ee80",
+          "kind": "ElaboratedType",
+          "type": {
+            "qualType": "struct Sound"
+          },
+          "ownedTagDecl": {
+            "id": "0x5f7a9b31edd8",
+            "kind": "RecordDecl",
+            "name": "Sound"
+          },
+          "inner": [
+            {
+              "id": "0x5f7a9b31ee60",
+              "kind": "RecordType",
+              "type": {
+                "qualType": "struct Sound"
+              },
+              "decl": {
+                "id": "0x5f7a9b31edd8",
+                "kind": "RecordDecl",
+                "name": "Sound"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b322fa0",
+      "kind": "RecordDecl",
+      "loc": {
+        "offset": 1121,
+        "line": 30,
+        "col": 16,
+        "tokLen": 5
+      },
+      "range": {
+        "begin": {
+          "offset": 1114,
+          "col": 9,
+          "tokLen": 6
+        },
+        "end": {
+          "offset": 1128,
+          "col": 23,
+          "tokLen": 1
+        }
+      },
+      "name": "Music",
+      "tagUsed": "struct",
+      "completeDefinition": true
+    },
+    {
+      "id": "0x5f7a9b323098",
+      "kind": "TypedefDecl",
+      "loc": {
+        "offset": 1130,
+        "col": 25,
+        "tokLen": 5
+      },
+      "range": {
+        "begin": {
+          "offset": 1106,
+          "col": 1,
+          "tokLen": 7
+        },
+        "end": {
+          "offset": 1130,
+          "col": 25,
+          "tokLen": 5
+        }
+      },
+      "isReferenced": true,
+      "name": "Music",
+      "type": {
+        "desugaredQualType": "struct Music",
+        "qualType": "struct Music"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b323040",
+          "kind": "ElaboratedType",
+          "type": {
+            "qualType": "struct Music"
+          },
+          "ownedTagDecl": {
+            "id": "0x5f7a9b322fa0",
+            "kind": "RecordDecl",
+            "name": "Music"
+          },
+          "inner": [
+            {
+              "id": "0x5f7a9b323020",
+              "kind": "RecordType",
+              "type": {
+                "qualType": "struct Music"
+              },
+              "decl": {
+                "id": "0x5f7a9b322fa0",
+                "kind": "RecordDecl",
+                "name": "Music"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b323108",
+      "kind": "RecordDecl",
+      "loc": {
+        "offset": 1152,
+        "line": 31,
+        "col": 16,
+        "tokLen": 11
+      },
+      "range": {
+        "begin": {
+          "offset": 1145,
+          "col": 9,
+          "tokLen": 6
+        },
+        "end": {
+          "offset": 1165,
+          "col": 29,
+          "tokLen": 1
+        }
+      },
+      "name": "AudioStream",
+      "tagUsed": "struct",
+      "completeDefinition": true
+    },
+    {
+      "id": "0x5f7a9b323208",
+      "kind": "TypedefDecl",
+      "loc": {
+        "offset": 1167,
+        "col": 31,
+        "tokLen": 11
+      },
+      "range": {
+        "begin": {
+          "offset": 1137,
+          "col": 1,
+          "tokLen": 7
+        },
+        "end": {
+          "offset": 1167,
+          "col": 31,
+          "tokLen": 11
+        }
+      },
+      "isReferenced": true,
+      "name": "AudioStream",
+      "type": {
+        "desugaredQualType": "struct AudioStream",
+        "qualType": "struct AudioStream"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b3231b0",
+          "kind": "ElaboratedType",
+          "type": {
+            "qualType": "struct AudioStream"
+          },
+          "ownedTagDecl": {
+            "id": "0x5f7a9b323108",
+            "kind": "RecordDecl",
+            "name": "AudioStream"
+          },
+          "inner": [
+            {
+              "id": "0x5f7a9b323190",
+              "kind": "RecordType",
+              "type": {
+                "qualType": "struct AudioStream"
+              },
+              "decl": {
+                "id": "0x5f7a9b323108",
+                "kind": "RecordDecl",
+                "name": "AudioStream"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b323278",
+      "kind": "EnumDecl",
+      "loc": {
+        "offset": 1193,
+        "line": 32,
+        "col": 14,
+        "tokLen": 4
+      },
+      "range": {
+        "begin": {
+          "offset": 1188,
+          "col": 9,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 1225,
+          "col": 46,
+          "tokLen": 1
+        }
+      },
+      "name": "bool",
+      "inner": [
+        {
+          "id": "0x5f7a9b323380",
+          "kind": "EnumConstantDecl",
+          "loc": {
+            "offset": 1200,
+            "col": 21,
+            "tokLen": 5
+          },
+          "range": {
+            "begin": {
+              "offset": 1200,
+              "col": 21,
+              "tokLen": 5
+            },
+            "end": {
+              "offset": 1208,
+              "col": 29,
+              "tokLen": 1
+            }
+          },
+          "isReferenced": true,
+          "name": "false",
+          "type": {
+            "qualType": "int"
+          },
+          "inner": [
+            {
+              "id": "0x5f7a9b323360",
+              "kind": "ConstantExpr",
+              "range": {
+                "begin": {
+                  "offset": 1208,
+                  "col": 29,
+                  "tokLen": 1
+                },
+                "end": {
+                  "offset": 1208,
+                  "col": 29,
+                  "tokLen": 1
+                }
+              },
+              "type": {
+                "qualType": "int"
+              },
+              "valueCategory": "prvalue",
+              "value": "0",
+              "inner": [
+                {
+                  "id": "0x5f7a9b323340",
+                  "kind": "IntegerLiteral",
+                  "range": {
+                    "begin": {
+                      "offset": 1208,
+                      "col": 29,
+                      "tokLen": 1
+                    },
+                    "end": {
+                      "offset": 1208,
+                      "col": 29,
+                      "tokLen": 1
+                    }
+                  },
+                  "type": {
+                    "qualType": "int"
+                  },
+                  "valueCategory": "prvalue",
+                  "value": "0"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "0x5f7a9b323428",
+          "kind": "EnumConstantDecl",
+          "loc": {
+            "offset": 1211,
+            "col": 32,
+            "tokLen": 4
+          },
+          "range": {
+            "begin": {
+              "offset": 1211,
+              "col": 32,
+              "tokLen": 4
+            },
+            "end": {
+              "offset": 1219,
+              "col": 40,
+              "tokLen": 5
+            }
+          },
+          "name": "true",
+          "type": {
+            "qualType": "int"
+          },
+          "inner": [
+            {
+              "id": "0x5f7a9b323408",
+              "kind": "ConstantExpr",
+              "range": {
+                "begin": {
+                  "offset": 1218,
+                  "col": 39,
+                  "tokLen": 1
+                },
+                "end": {
+                  "offset": 1219,
+                  "col": 40,
+                  "tokLen": 5
+                }
+              },
+              "type": {
+                "qualType": "int"
+              },
+              "valueCategory": "prvalue",
+              "value": "1",
+              "inner": [
+                {
+                  "id": "0x5f7a9b3233f0",
+                  "kind": "UnaryOperator",
+                  "range": {
+                    "begin": {
+                      "offset": 1218,
+                      "col": 39,
+                      "tokLen": 1
+                    },
+                    "end": {
+                      "offset": 1219,
+                      "col": 40,
+                      "tokLen": 5
+                    }
+                  },
+                  "type": {
+                    "qualType": "int"
+                  },
+                  "valueCategory": "prvalue",
+                  "isPostfix": false,
+                  "opcode": "!",
+                  "canOverflow": false,
+                  "inner": [
+                    {
+                      "id": "0x5f7a9b3233d0",
+                      "kind": "DeclRefExpr",
+                      "range": {
+                        "begin": {
+                          "offset": 1219,
+                          "col": 40,
+                          "tokLen": 5
+                        },
+                        "end": {
+                          "offset": 1219,
+                          "col": 40,
+                          "tokLen": 5
+                        }
+                      },
+                      "type": {
+                        "qualType": "int"
+                      },
+                      "valueCategory": "prvalue",
+                      "referencedDecl": {
+                        "id": "0x5f7a9b323380",
+                        "kind": "EnumConstantDecl",
+                        "name": "false",
+                        "type": {
+                          "qualType": "int"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b3234d8",
+      "kind": "TypedefDecl",
+      "loc": {
+        "offset": 1227,
+        "col": 48,
+        "tokLen": 4
+      },
+      "range": {
+        "begin": {
+          "offset": 1180,
+          "col": 1,
+          "tokLen": 7
+        },
+        "end": {
+          "offset": 1227,
+          "col": 48,
+          "tokLen": 4
+        }
+      },
+      "isReferenced": true,
+      "name": "bool",
+      "type": {
+        "desugaredQualType": "enum bool",
+        "qualType": "enum bool"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b323480",
+          "kind": "ElaboratedType",
+          "type": {
+            "qualType": "enum bool"
+          },
+          "ownedTagDecl": {
+            "id": "0x5f7a9b323278",
+            "kind": "EnumDecl",
+            "name": "bool"
+          },
+          "inner": [
+            {
+              "id": "0x5f7a9b323320",
+              "kind": "EnumType",
+              "type": {
+                "qualType": "enum bool"
+              },
+              "decl": {
+                "id": "0x5f7a9b323278",
+                "kind": "EnumDecl",
+                "name": "bool"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b3236a8",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 1282,
+        "line": 35,
+        "col": 12,
+        "tokLen": 17
+      },
+      "range": {
+        "begin": {
+          "offset": 1277,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 1304,
+          "col": 34,
+          "tokLen": 1
+        }
+      },
+      "name": "WindowShouldClose",
+      "mangledName": "WindowShouldClose",
+      "type": {
+        "qualType": "bool (void)"
+      }
+    },
+    {
+      "id": "0x5f7a9b323830",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 1401,
+        "line": 36,
+        "col": 12,
+        "tokLen": 13
+      },
+      "range": {
+        "begin": {
+          "offset": 1396,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 1419,
+          "col": 30,
+          "tokLen": 1
+        }
+      },
+      "name": "IsWindowReady",
+      "mangledName": "IsWindowReady",
+      "type": {
+        "qualType": "bool (void)"
+      }
+    },
+    {
+      "id": "0x5f7a9b323970",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 1520,
+        "line": 37,
+        "col": 12,
+        "tokLen": 18
+      },
+      "range": {
+        "begin": {
+          "offset": 1515,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 1543,
+          "col": 35,
+          "tokLen": 1
+        }
+      },
+      "name": "IsWindowFullscreen",
+      "mangledName": "IsWindowFullscreen",
+      "type": {
+        "qualType": "bool (void)"
+      }
+    },
+    {
+      "id": "0x5f7a9b323ab0",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 1629,
+        "line": 38,
+        "col": 12,
+        "tokLen": 14
+      },
+      "range": {
+        "begin": {
+          "offset": 1624,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 1648,
+          "col": 31,
+          "tokLen": 1
+        }
+      },
+      "name": "IsWindowHidden",
+      "mangledName": "IsWindowHidden",
+      "type": {
+        "qualType": "bool (void)"
+      }
+    },
+    {
+      "id": "0x5f7a9b323bf0",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 1758,
+        "line": 39,
+        "col": 12,
+        "tokLen": 17
+      },
+      "range": {
+        "begin": {
+          "offset": 1753,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 1780,
+          "col": 34,
+          "tokLen": 1
+        }
+      },
+      "name": "IsWindowMinimized",
+      "mangledName": "IsWindowMinimized",
+      "type": {
+        "qualType": "bool (void)"
+      }
+    },
+    {
+      "id": "0x5f7a9b323d30",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 1890,
+        "line": 40,
+        "col": 12,
+        "tokLen": 17
+      },
+      "range": {
+        "begin": {
+          "offset": 1885,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 1912,
+          "col": 34,
+          "tokLen": 1
+        }
+      },
+      "name": "IsWindowMaximized",
+      "mangledName": "IsWindowMaximized",
+      "type": {
+        "qualType": "bool (void)"
+      }
+    },
+    {
+      "id": "0x5f7a9b323e70",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 2022,
+        "line": 41,
+        "col": 12,
+        "tokLen": 15
+      },
+      "range": {
+        "begin": {
+          "offset": 2017,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 2042,
+          "col": 32,
+          "tokLen": 1
+        }
+      },
+      "name": "IsWindowFocused",
+      "mangledName": "IsWindowFocused",
+      "type": {
+        "qualType": "bool (void)"
+      }
+    },
+    {
+      "id": "0x5f7a9b323fd0",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 2152,
+        "line": 42,
+        "col": 12,
+        "tokLen": 15
+      },
+      "range": {
+        "begin": {
+          "offset": 2147,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 2172,
+          "col": 32,
+          "tokLen": 1
+        }
+      },
+      "name": "IsWindowResized",
+      "mangledName": "IsWindowResized",
+      "type": {
+        "qualType": "bool (void)"
+      }
+    },
+    {
+      "id": "0x5f7a9b324188",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 2265,
+        "line": 43,
+        "col": 12,
+        "tokLen": 13
+      },
+      "range": {
+        "begin": {
+          "offset": 2260,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 2296,
+          "col": 43,
+          "tokLen": 1
+        }
+      },
+      "name": "IsWindowState",
+      "mangledName": "IsWindowState",
+      "type": {
+        "qualType": "bool (unsigned int)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b324090",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 2292,
+            "col": 39,
+            "tokLen": 4
+          },
+          "range": {
+            "begin": {
+              "offset": 2279,
+              "col": 26,
+              "tokLen": 8
+            },
+            "end": {
+              "offset": 2292,
+              "col": 39,
+              "tokLen": 4
+            }
+          },
+          "name": "flag",
+          "type": {
+            "qualType": "unsigned int"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b3242d0",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 2379,
+        "line": 44,
+        "col": 12,
+        "tokLen": 14
+      },
+      "range": {
+        "begin": {
+          "offset": 2374,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 2398,
+          "col": 31,
+          "tokLen": 1
+        }
+      },
+      "name": "IsCursorHidden",
+      "mangledName": "IsCursorHidden",
+      "type": {
+        "qualType": "bool (void)"
+      }
+    },
+    {
+      "id": "0x5f7a9b324410",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 2479,
+        "line": 45,
+        "col": 12,
+        "tokLen": 16
+      },
+      "range": {
+        "begin": {
+          "offset": 2474,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 2500,
+          "col": 33,
+          "tokLen": 1
+        }
+      },
+      "name": "IsCursorOnScreen",
+      "mangledName": "IsCursorOnScreen",
+      "type": {
+        "qualType": "bool (void)"
+      }
+    },
+    {
+      "id": "0x5f7a9b3246f8",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 2581,
+        "line": 46,
+        "col": 12,
+        "tokLen": 12
+      },
+      "range": {
+        "begin": {
+          "offset": 2576,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 2653,
+          "col": 84,
+          "tokLen": 1
+        }
+      },
+      "name": "SaveFileData",
+      "mangledName": "SaveFileData",
+      "type": {
+        "qualType": "bool (const char *, void *, unsigned int)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b3244d0",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 2606,
+            "col": 37,
+            "tokLen": 8
+          },
+          "range": {
+            "begin": {
+              "offset": 2594,
+              "col": 25,
+              "tokLen": 5
+            },
+            "end": {
+              "offset": 2606,
+              "col": 37,
+              "tokLen": 8
+            }
+          },
+          "name": "fileName",
+          "type": {
+            "qualType": "const char *"
+          }
+        },
+        {
+          "id": "0x5f7a9b324550",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 2622,
+            "col": 53,
+            "tokLen": 4
+          },
+          "range": {
+            "begin": {
+              "offset": 2616,
+              "col": 47,
+              "tokLen": 4
+            },
+            "end": {
+              "offset": 2622,
+              "col": 53,
+              "tokLen": 4
+            }
+          },
+          "name": "data",
+          "type": {
+            "qualType": "void *"
+          }
+        },
+        {
+          "id": "0x5f7a9b3245d0",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 2641,
+            "col": 72,
+            "tokLen": 12
+          },
+          "range": {
+            "begin": {
+              "offset": 2628,
+              "col": 59,
+              "tokLen": 8
+            },
+            "end": {
+              "offset": 2641,
+              "col": 72,
+              "tokLen": 12
+            }
+          },
+          "name": "bytesToWrite",
+          "type": {
+            "qualType": "unsigned int"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b3249f8",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 2739,
+        "line": 47,
+        "col": 12,
+        "tokLen": 16
+      },
+      "range": {
+        "begin": {
+          "offset": 2734,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 2813,
+          "col": 86,
+          "tokLen": 1
+        }
+      },
+      "name": "ExportDataAsCode",
+      "mangledName": "ExportDataAsCode",
+      "type": {
+        "qualType": "bool (const char *, unsigned int, const char *)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b3247d0",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 2768,
+            "col": 41,
+            "tokLen": 4
+          },
+          "range": {
+            "begin": {
+              "offset": 2756,
+              "col": 29,
+              "tokLen": 5
+            },
+            "end": {
+              "offset": 2768,
+              "col": 41,
+              "tokLen": 4
+            }
+          },
+          "name": "data",
+          "type": {
+            "qualType": "const char *"
+          }
+        },
+        {
+          "id": "0x5f7a9b324850",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 2787,
+            "col": 60,
+            "tokLen": 4
+          },
+          "range": {
+            "begin": {
+              "offset": 2774,
+              "col": 47,
+              "tokLen": 8
+            },
+            "end": {
+              "offset": 2787,
+              "col": 60,
+              "tokLen": 4
+            }
+          },
+          "name": "size",
+          "type": {
+            "qualType": "unsigned int"
+          }
+        },
+        {
+          "id": "0x5f7a9b3248d0",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 2805,
+            "col": 78,
+            "tokLen": 8
+          },
+          "range": {
+            "begin": {
+              "offset": 2793,
+              "col": 66,
+              "tokLen": 5
+            },
+            "end": {
+              "offset": 2805,
+              "col": 78,
+              "tokLen": 8
+            }
+          },
+          "name": "fileName",
+          "type": {
+            "qualType": "const char *"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b324c68",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 2880,
+        "line": 48,
+        "col": 12,
+        "tokLen": 12
+      },
+      "range": {
+        "begin": {
+          "offset": 2875,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 2925,
+          "col": 57,
+          "tokLen": 1
+        }
+      },
+      "name": "SaveFileText",
+      "mangledName": "SaveFileText",
+      "type": {
+        "qualType": "bool (const char *, char *)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b324ad0",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 2905,
+            "col": 37,
+            "tokLen": 8
+          },
+          "range": {
+            "begin": {
+              "offset": 2893,
+              "col": 25,
+              "tokLen": 5
+            },
+            "end": {
+              "offset": 2905,
+              "col": 37,
+              "tokLen": 8
+            }
+          },
+          "name": "fileName",
+          "type": {
+            "qualType": "const char *"
+          }
+        },
+        {
+          "id": "0x5f7a9b324b50",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 2921,
+            "col": 53,
+            "tokLen": 4
+          },
+          "range": {
+            "begin": {
+              "offset": 2915,
+              "col": 47,
+              "tokLen": 4
+            },
+            "end": {
+              "offset": 2921,
+              "col": 53,
+              "tokLen": 4
+            }
+          },
+          "name": "text",
+          "type": {
+            "qualType": "char *"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b324e28",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 3037,
+        "line": 49,
+        "col": 12,
+        "tokLen": 10
+      },
+      "range": {
+        "begin": {
+          "offset": 3032,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 3068,
+          "col": 43,
+          "tokLen": 1
+        }
+      },
+      "name": "FileExists",
+      "mangledName": "FileExists",
+      "type": {
+        "qualType": "bool (const char *)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b324d38",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 3060,
+            "col": 35,
+            "tokLen": 8
+          },
+          "range": {
+            "begin": {
+              "offset": 3048,
+              "col": 23,
+              "tokLen": 5
+            },
+            "end": {
+              "offset": 3060,
+              "col": 35,
+              "tokLen": 8
+            }
+          },
+          "name": "fileName",
+          "type": {
+            "qualType": "const char *"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b324fc0",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 3127,
+        "line": 50,
+        "col": 12,
+        "tokLen": 15
+      },
+      "range": {
+        "begin": {
+          "offset": 3122,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 3162,
+          "col": 47,
+          "tokLen": 1
+        }
+      },
+      "name": "DirectoryExists",
+      "mangledName": "DirectoryExists",
+      "type": {
+        "qualType": "bool (const char *)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b324ef0",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 3155,
+            "col": 40,
+            "tokLen": 7
+          },
+          "range": {
+            "begin": {
+              "offset": 3143,
+              "col": 28,
+              "tokLen": 5
+            },
+            "end": {
+              "offset": 3155,
+              "col": 40,
+              "tokLen": 7
+            }
+          },
+          "name": "dirPath",
+          "type": {
+            "qualType": "const char *"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b325218",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 3229,
+        "line": 51,
+        "col": 12,
+        "tokLen": 15
+      },
+      "range": {
+        "begin": {
+          "offset": 3224,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 3282,
+          "col": 65,
+          "tokLen": 1
+        }
+      },
+      "name": "IsFileExtension",
+      "mangledName": "IsFileExtension",
+      "type": {
+        "qualType": "bool (const char *, const char *)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b325088",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 3257,
+            "col": 40,
+            "tokLen": 8
+          },
+          "range": {
+            "begin": {
+              "offset": 3245,
+              "col": 28,
+              "tokLen": 5
+            },
+            "end": {
+              "offset": 3257,
+              "col": 40,
+              "tokLen": 8
+            }
+          },
+          "name": "fileName",
+          "type": {
+            "qualType": "const char *"
+          }
+        },
+        {
+          "id": "0x5f7a9b325108",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 3279,
+            "col": 62,
+            "tokLen": 3
+          },
+          "range": {
+            "begin": {
+              "offset": 3267,
+              "col": 50,
+              "tokLen": 5
+            },
+            "end": {
+              "offset": 3279,
+              "col": 62,
+              "tokLen": 3
+            }
+          },
+          "name": "ext",
+          "type": {
+            "qualType": "const char *"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b325378",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 3350,
+        "line": 52,
+        "col": 12,
+        "tokLen": 15
+      },
+      "range": {
+        "begin": {
+          "offset": 3345,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 3381,
+          "col": 43,
+          "tokLen": 1
+        }
+      },
+      "name": "ChangeDirectory",
+      "mangledName": "ChangeDirectory",
+      "type": {
+        "qualType": "bool (const char *)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b3252e8",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 3378,
+            "col": 40,
+            "tokLen": 3
+          },
+          "range": {
+            "begin": {
+              "offset": 3366,
+              "col": 28,
+              "tokLen": 5
+            },
+            "end": {
+              "offset": 3378,
+              "col": 40,
+              "tokLen": 3
+            }
+          },
+          "name": "dir",
+          "type": {
+            "qualType": "const char *"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b3254d0",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 3468,
+        "line": 53,
+        "col": 12,
+        "tokLen": 10
+      },
+      "range": {
+        "begin": {
+          "offset": 3463,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 3495,
+          "col": 39,
+          "tokLen": 1
+        }
+      },
+      "name": "IsPathFile",
+      "mangledName": "IsPathFile",
+      "type": {
+        "qualType": "bool (const char *)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b325440",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 3491,
+            "col": 35,
+            "tokLen": 4
+          },
+          "range": {
+            "begin": {
+              "offset": 3479,
+              "col": 23,
+              "tokLen": 5
+            },
+            "end": {
+              "offset": 3491,
+              "col": 35,
+              "tokLen": 4
+            }
+          },
+          "name": "path",
+          "type": {
+            "qualType": "const char *"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b325618",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 3584,
+        "line": 54,
+        "col": 12,
+        "tokLen": 13
+      },
+      "range": {
+        "begin": {
+          "offset": 3579,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 3602,
+          "col": 30,
+          "tokLen": 1
+        }
+      },
+      "name": "IsFileDropped",
+      "mangledName": "IsFileDropped",
+      "type": {
+        "qualType": "bool (void)"
+      }
+    },
+    {
+      "id": "0x5f7a9b3257c8",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 3698,
+        "line": 55,
+        "col": 12,
+        "tokLen": 12
+      },
+      "range": {
+        "begin": {
+          "offset": 3693,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 3718,
+          "col": 32,
+          "tokLen": 1
+        }
+      },
+      "name": "IsKeyPressed",
+      "mangledName": "IsKeyPressed",
+      "type": {
+        "qualType": "bool (int)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b3256d8",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 3715,
+            "col": 29,
+            "tokLen": 3
+          },
+          "range": {
+            "begin": {
+              "offset": 3711,
+              "col": 25,
+              "tokLen": 3
+            },
+            "end": {
+              "offset": 3715,
+              "col": 29,
+              "tokLen": 3
+            }
+          },
+          "name": "key",
+          "type": {
+            "qualType": "int"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b325920",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 3800,
+        "line": 56,
+        "col": 12,
+        "tokLen": 9
+      },
+      "range": {
+        "begin": {
+          "offset": 3795,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 3817,
+          "col": 29,
+          "tokLen": 1
+        }
+      },
+      "name": "IsKeyDown",
+      "mangledName": "IsKeyDown",
+      "type": {
+        "qualType": "bool (int)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b325890",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 3814,
+            "col": 26,
+            "tokLen": 3
+          },
+          "range": {
+            "begin": {
+              "offset": 3810,
+              "col": 22,
+              "tokLen": 3
+            },
+            "end": {
+              "offset": 3814,
+              "col": 26,
+              "tokLen": 3
+            }
+          },
+          "name": "key",
+          "type": {
+            "qualType": "int"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b325a78",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 3897,
+        "line": 57,
+        "col": 12,
+        "tokLen": 13
+      },
+      "range": {
+        "begin": {
+          "offset": 3892,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 3918,
+          "col": 33,
+          "tokLen": 1
+        }
+      },
+      "name": "IsKeyReleased",
+      "mangledName": "IsKeyReleased",
+      "type": {
+        "qualType": "bool (int)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b3259e8",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 3915,
+            "col": 30,
+            "tokLen": 3
+          },
+          "range": {
+            "begin": {
+              "offset": 3911,
+              "col": 26,
+              "tokLen": 3
+            },
+            "end": {
+              "offset": 3915,
+              "col": 30,
+              "tokLen": 3
+            }
+          },
+          "name": "key",
+          "type": {
+            "qualType": "int"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b325bd0",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 4000,
+        "line": 58,
+        "col": 12,
+        "tokLen": 7
+      },
+      "range": {
+        "begin": {
+          "offset": 3995,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 4015,
+          "col": 27,
+          "tokLen": 1
+        }
+      },
+      "name": "IsKeyUp",
+      "mangledName": "IsKeyUp",
+      "type": {
+        "qualType": "bool (int)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b325b40",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 4012,
+            "col": 24,
+            "tokLen": 3
+          },
+          "range": {
+            "begin": {
+              "offset": 4008,
+              "col": 20,
+              "tokLen": 3
+            },
+            "end": {
+              "offset": 4012,
+              "col": 24,
+              "tokLen": 3
+            }
+          },
+          "name": "key",
+          "type": {
+            "qualType": "int"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b325d28",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 4101,
+        "line": 59,
+        "col": 12,
+        "tokLen": 18
+      },
+      "range": {
+        "begin": {
+          "offset": 4096,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 4131,
+          "col": 42,
+          "tokLen": 1
+        }
+      },
+      "name": "IsGamepadAvailable",
+      "mangledName": "IsGamepadAvailable",
+      "type": {
+        "qualType": "bool (int)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b325c98",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 4124,
+            "col": 35,
+            "tokLen": 7
+          },
+          "range": {
+            "begin": {
+              "offset": 4120,
+              "col": 31,
+              "tokLen": 3
+            },
+            "end": {
+              "offset": 4124,
+              "col": 35,
+              "tokLen": 7
+            }
+          },
+          "name": "gamepad",
+          "type": {
+            "qualType": "int"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b326fe0",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 4198,
+        "line": 60,
+        "col": 12,
+        "tokLen": 22
+      },
+      "range": {
+        "begin": {
+          "offset": 4193,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 4244,
+          "col": 58,
+          "tokLen": 1
+        }
+      },
+      "name": "IsGamepadButtonPressed",
+      "mangledName": "IsGamepadButtonPressed",
+      "type": {
+        "qualType": "bool (int, int)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b325df0",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 4225,
+            "col": 39,
+            "tokLen": 7
+          },
+          "range": {
+            "begin": {
+              "offset": 4221,
+              "col": 35,
+              "tokLen": 3
+            },
+            "end": {
+              "offset": 4225,
+              "col": 39,
+              "tokLen": 7
+            }
+          },
+          "name": "gamepad",
+          "type": {
+            "qualType": "int"
+          }
+        },
+        {
+          "id": "0x5f7a9b325e70",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 4238,
+            "col": 52,
+            "tokLen": 6
+          },
+          "range": {
+            "begin": {
+              "offset": 4234,
+              "col": 48,
+              "tokLen": 3
+            },
+            "end": {
+              "offset": 4238,
+              "col": 52,
+              "tokLen": 6
+            }
+          },
+          "name": "button",
+          "type": {
+            "qualType": "int"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b3271c8",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 4311,
+        "line": 61,
+        "col": 12,
+        "tokLen": 19
+      },
+      "range": {
+        "begin": {
+          "offset": 4306,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 4354,
+          "col": 55,
+          "tokLen": 1
+        }
+      },
+      "name": "IsGamepadButtonDown",
+      "mangledName": "IsGamepadButtonDown",
+      "type": {
+        "qualType": "bool (int, int)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b3270b0",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 4335,
+            "col": 36,
+            "tokLen": 7
+          },
+          "range": {
+            "begin": {
+              "offset": 4331,
+              "col": 32,
+              "tokLen": 3
+            },
+            "end": {
+              "offset": 4335,
+              "col": 36,
+              "tokLen": 7
+            }
+          },
+          "name": "gamepad",
+          "type": {
+            "qualType": "int"
+          }
+        },
+        {
+          "id": "0x5f7a9b327130",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 4348,
+            "col": 49,
+            "tokLen": 6
+          },
+          "range": {
+            "begin": {
+              "offset": 4344,
+              "col": 45,
+              "tokLen": 3
+            },
+            "end": {
+              "offset": 4348,
+              "col": 49,
+              "tokLen": 6
+            }
+          },
+          "name": "button",
+          "type": {
+            "qualType": "int"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b3273b0",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 4419,
+        "line": 62,
+        "col": 12,
+        "tokLen": 23
+      },
+      "range": {
+        "begin": {
+          "offset": 4414,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 4466,
+          "col": 59,
+          "tokLen": 1
+        }
+      },
+      "name": "IsGamepadButtonReleased",
+      "mangledName": "IsGamepadButtonReleased",
+      "type": {
+        "qualType": "bool (int, int)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b327298",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 4447,
+            "col": 40,
+            "tokLen": 7
+          },
+          "range": {
+            "begin": {
+              "offset": 4443,
+              "col": 36,
+              "tokLen": 3
+            },
+            "end": {
+              "offset": 4447,
+              "col": 40,
+              "tokLen": 7
+            }
+          },
+          "name": "gamepad",
+          "type": {
+            "qualType": "int"
+          }
+        },
+        {
+          "id": "0x5f7a9b327318",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 4460,
+            "col": 53,
+            "tokLen": 6
+          },
+          "range": {
+            "begin": {
+              "offset": 4456,
+              "col": 49,
+              "tokLen": 3
+            },
+            "end": {
+              "offset": 4460,
+              "col": 53,
+              "tokLen": 6
+            }
+          },
+          "name": "button",
+          "type": {
+            "qualType": "int"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b327598",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 4533,
+        "line": 63,
+        "col": 12,
+        "tokLen": 17
+      },
+      "range": {
+        "begin": {
+          "offset": 4528,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 4574,
+          "col": 53,
+          "tokLen": 1
+        }
+      },
+      "name": "IsGamepadButtonUp",
+      "mangledName": "IsGamepadButtonUp",
+      "type": {
+        "qualType": "bool (int, int)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b327480",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 4555,
+            "col": 34,
+            "tokLen": 7
+          },
+          "range": {
+            "begin": {
+              "offset": 4551,
+              "col": 30,
+              "tokLen": 3
+            },
+            "end": {
+              "offset": 4555,
+              "col": 34,
+              "tokLen": 7
+            }
+          },
+          "name": "gamepad",
+          "type": {
+            "qualType": "int"
+          }
+        },
+        {
+          "id": "0x5f7a9b327500",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 4568,
+            "col": 47,
+            "tokLen": 6
+          },
+          "range": {
+            "begin": {
+              "offset": 4564,
+              "col": 43,
+              "tokLen": 3
+            },
+            "end": {
+              "offset": 4568,
+              "col": 47,
+              "tokLen": 6
+            }
+          },
+          "name": "button",
+          "type": {
+            "qualType": "int"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b3276f8",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 4645,
+        "line": 64,
+        "col": 12,
+        "tokLen": 20
+      },
+      "range": {
+        "begin": {
+          "offset": 4640,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 4676,
+          "col": 43,
+          "tokLen": 1
+        }
+      },
+      "name": "IsMouseButtonPressed",
+      "mangledName": "IsMouseButtonPressed",
+      "type": {
+        "qualType": "bool (int)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b327668",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 4670,
+            "col": 37,
+            "tokLen": 6
+          },
+          "range": {
+            "begin": {
+              "offset": 4666,
+              "col": 33,
+              "tokLen": 3
+            },
+            "end": {
+              "offset": 4670,
+              "col": 37,
+              "tokLen": 6
+            }
+          },
+          "name": "button",
+          "type": {
+            "qualType": "int"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b327850",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 4756,
+        "line": 65,
+        "col": 12,
+        "tokLen": 17
+      },
+      "range": {
+        "begin": {
+          "offset": 4751,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 4784,
+          "col": 40,
+          "tokLen": 1
+        }
+      },
+      "name": "IsMouseButtonDown",
+      "mangledName": "IsMouseButtonDown",
+      "type": {
+        "qualType": "bool (int)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b3277c0",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 4778,
+            "col": 34,
+            "tokLen": 6
+          },
+          "range": {
+            "begin": {
+              "offset": 4774,
+              "col": 30,
+              "tokLen": 3
+            },
+            "end": {
+              "offset": 4778,
+              "col": 34,
+              "tokLen": 6
+            }
+          },
+          "name": "button",
+          "type": {
+            "qualType": "int"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b3279a8",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 4862,
+        "line": 66,
+        "col": 12,
+        "tokLen": 21
+      },
+      "range": {
+        "begin": {
+          "offset": 4857,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 4894,
+          "col": 44,
+          "tokLen": 1
+        }
+      },
+      "name": "IsMouseButtonReleased",
+      "mangledName": "IsMouseButtonReleased",
+      "type": {
+        "qualType": "bool (int)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b327918",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 4888,
+            "col": 38,
+            "tokLen": 6
+          },
+          "range": {
+            "begin": {
+              "offset": 4884,
+              "col": 34,
+              "tokLen": 3
+            },
+            "end": {
+              "offset": 4888,
+              "col": 38,
+              "tokLen": 6
+            }
+          },
+          "name": "button",
+          "type": {
+            "qualType": "int"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b327b00",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 4974,
+        "line": 67,
+        "col": 12,
+        "tokLen": 15
+      },
+      "range": {
+        "begin": {
+          "offset": 4969,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 5000,
+          "col": 38,
+          "tokLen": 1
+        }
+      },
+      "name": "IsMouseButtonUp",
+      "mangledName": "IsMouseButtonUp",
+      "type": {
+        "qualType": "bool (int)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b327a70",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 4994,
+            "col": 32,
+            "tokLen": 6
+          },
+          "range": {
+            "begin": {
+              "offset": 4990,
+              "col": 28,
+              "tokLen": 3
+            },
+            "end": {
+              "offset": 4994,
+              "col": 32,
+              "tokLen": 6
+            }
+          },
+          "name": "button",
+          "type": {
+            "qualType": "int"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b327c58",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 5084,
+        "line": 68,
+        "col": 12,
+        "tokLen": 17
+      },
+      "range": {
+        "begin": {
+          "offset": 5079,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 5113,
+          "col": 41,
+          "tokLen": 1
+        }
+      },
+      "name": "IsGestureDetected",
+      "mangledName": "IsGestureDetected",
+      "type": {
+        "qualType": "bool (int)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b327bc8",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 5106,
+            "col": 34,
+            "tokLen": 7
+          },
+          "range": {
+            "begin": {
+              "offset": 5102,
+              "col": 30,
+              "tokLen": 3
+            },
+            "end": {
+              "offset": 5106,
+              "col": 34,
+              "tokLen": 7
+            }
+          },
+          "name": "gesture",
+          "type": {
+            "qualType": "int"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b327f08",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 5181,
+        "line": 69,
+        "col": 12,
+        "tokLen": 18
+      },
+      "range": {
+        "begin": {
+          "offset": 5176,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 5230,
+          "col": 61,
+          "tokLen": 1
+        }
+      },
+      "name": "CheckCollisionRecs",
+      "mangledName": "CheckCollisionRecs",
+      "type": {
+        "qualType": "bool (Rectangle, Rectangle)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b327d80",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 5210,
+            "col": 41,
+            "tokLen": 4
+          },
+          "range": {
+            "begin": {
+              "offset": 5200,
+              "col": 31,
+              "tokLen": 9
+            },
+            "end": {
+              "offset": 5210,
+              "col": 41,
+              "tokLen": 4
+            }
+          },
+          "name": "rec1",
+          "type": {
+            "desugaredQualType": "struct Rectangle",
+            "qualType": "Rectangle",
+            "typeAliasDeclId": "0x5f7a9b31e7a8"
+          }
+        },
+        {
+          "id": "0x5f7a9b327df8",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 5226,
+            "col": 57,
+            "tokLen": 4
+          },
+          "range": {
+            "begin": {
+              "offset": 5216,
+              "col": 47,
+              "tokLen": 9
+            },
+            "end": {
+              "offset": 5226,
+              "col": 57,
+              "tokLen": 4
+            }
+          },
+          "name": "rec2",
+          "type": {
+            "desugaredQualType": "struct Rectangle",
+            "qualType": "Rectangle",
+            "typeAliasDeclId": "0x5f7a9b31e7a8"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b328318",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 5328,
+        "line": 70,
+        "col": 12,
+        "tokLen": 21
+      },
+      "range": {
+        "begin": {
+          "offset": 5323,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 5412,
+          "col": 96,
+          "tokLen": 1
+        }
+      },
+      "name": "CheckCollisionCircles",
+      "mangledName": "CheckCollisionCircles",
+      "type": {
+        "qualType": "bool (Vector2, float, Vector2, float)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b328060",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 5358,
+            "col": 42,
+            "tokLen": 7
+          },
+          "range": {
+            "begin": {
+              "offset": 5350,
+              "col": 34,
+              "tokLen": 7
+            },
+            "end": {
+              "offset": 5358,
+              "col": 42,
+              "tokLen": 7
+            }
+          },
+          "name": "center1",
+          "type": {
+            "desugaredQualType": "struct Vector2",
+            "qualType": "Vector2",
+            "typeAliasDeclId": "0x5f7a9b31e358"
+          }
+        },
+        {
+          "id": "0x5f7a9b3280e0",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 5373,
+            "col": 57,
+            "tokLen": 7
+          },
+          "range": {
+            "begin": {
+              "offset": 5367,
+              "col": 51,
+              "tokLen": 5
+            },
+            "end": {
+              "offset": 5373,
+              "col": 57,
+              "tokLen": 7
+            }
+          },
+          "name": "radius1",
+          "type": {
+            "qualType": "float"
+          }
+        },
+        {
+          "id": "0x5f7a9b328158",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 5390,
+            "col": 74,
+            "tokLen": 7
+          },
+          "range": {
+            "begin": {
+              "offset": 5382,
+              "col": 66,
+              "tokLen": 7
+            },
+            "end": {
+              "offset": 5390,
+              "col": 74,
+              "tokLen": 7
+            }
+          },
+          "name": "center2",
+          "type": {
+            "desugaredQualType": "struct Vector2",
+            "qualType": "Vector2",
+            "typeAliasDeclId": "0x5f7a9b31e358"
+          }
+        },
+        {
+          "id": "0x5f7a9b3281d8",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 5405,
+            "col": 89,
+            "tokLen": 7
+          },
+          "range": {
+            "begin": {
+              "offset": 5399,
+              "col": 83,
+              "tokLen": 5
+            },
+            "end": {
+              "offset": 5405,
+              "col": 89,
+              "tokLen": 7
+            }
+          },
+          "name": "radius2",
+          "type": {
+            "qualType": "float"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b328608",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 5472,
+        "line": 71,
+        "col": 12,
+        "tokLen": 23
+      },
+      "range": {
+        "begin": {
+          "offset": 5467,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 5539,
+          "col": 79,
+          "tokLen": 1
+        }
+      },
+      "name": "CheckCollisionCircleRec",
+      "mangledName": "CheckCollisionCircleRec",
+      "type": {
+        "qualType": "bool (Vector2, float, Rectangle)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b3283f0",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 5504,
+            "col": 44,
+            "tokLen": 6
+          },
+          "range": {
+            "begin": {
+              "offset": 5496,
+              "col": 36,
+              "tokLen": 7
+            },
+            "end": {
+              "offset": 5504,
+              "col": 44,
+              "tokLen": 6
+            }
+          },
+          "name": "center",
+          "type": {
+            "desugaredQualType": "struct Vector2",
+            "qualType": "Vector2",
+            "typeAliasDeclId": "0x5f7a9b31e358"
+          }
+        },
+        {
+          "id": "0x5f7a9b328470",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 5518,
+            "col": 58,
+            "tokLen": 6
+          },
+          "range": {
+            "begin": {
+              "offset": 5512,
+              "col": 52,
+              "tokLen": 5
+            },
+            "end": {
+              "offset": 5518,
+              "col": 58,
+              "tokLen": 6
+            }
+          },
+          "name": "radius",
+          "type": {
+            "qualType": "float"
+          }
+        },
+        {
+          "id": "0x5f7a9b3284e8",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 5536,
+            "col": 76,
+            "tokLen": 3
+          },
+          "range": {
+            "begin": {
+              "offset": 5526,
+              "col": 66,
+              "tokLen": 9
+            },
+            "end": {
+              "offset": 5536,
+              "col": 76,
+              "tokLen": 3
+            }
+          },
+          "name": "rec",
+          "type": {
+            "desugaredQualType": "struct Rectangle",
+            "qualType": "Rectangle",
+            "typeAliasDeclId": "0x5f7a9b31e7a8"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b328868",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 5625,
+        "line": 72,
+        "col": 12,
+        "tokLen": 22
+      },
+      "range": {
+        "begin": {
+          "offset": 5620,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 5676,
+          "col": 63,
+          "tokLen": 1
+        }
+      },
+      "name": "CheckCollisionPointRec",
+      "mangledName": "CheckCollisionPointRec",
+      "type": {
+        "qualType": "bool (Vector2, Rectangle)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b3286d8",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 5656,
+            "col": 43,
+            "tokLen": 5
+          },
+          "range": {
+            "begin": {
+              "offset": 5648,
+              "col": 35,
+              "tokLen": 7
+            },
+            "end": {
+              "offset": 5656,
+              "col": 43,
+              "tokLen": 5
+            }
+          },
+          "name": "point",
+          "type": {
+            "desugaredQualType": "struct Vector2",
+            "qualType": "Vector2",
+            "typeAliasDeclId": "0x5f7a9b31e358"
+          }
+        },
+        {
+          "id": "0x5f7a9b328750",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 5673,
+            "col": 60,
+            "tokLen": 3
+          },
+          "range": {
+            "begin": {
+              "offset": 5663,
+              "col": 50,
+              "tokLen": 9
+            },
+            "end": {
+              "offset": 5673,
+              "col": 60,
+              "tokLen": 3
+            }
+          },
+          "name": "rec",
+          "type": {
+            "desugaredQualType": "struct Rectangle",
+            "qualType": "Rectangle",
+            "typeAliasDeclId": "0x5f7a9b31e7a8"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b328b48",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 5768,
+        "line": 73,
+        "col": 12,
+        "tokLen": 25
+      },
+      "range": {
+        "begin": {
+          "offset": 5763,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 5837,
+          "col": 81,
+          "tokLen": 1
+        }
+      },
+      "name": "CheckCollisionPointCircle",
+      "mangledName": "CheckCollisionPointCircle",
+      "type": {
+        "qualType": "bool (Vector2, Vector2, float)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b328930",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 5802,
+            "col": 46,
+            "tokLen": 5
+          },
+          "range": {
+            "begin": {
+              "offset": 5794,
+              "col": 38,
+              "tokLen": 7
+            },
+            "end": {
+              "offset": 5802,
+              "col": 46,
+              "tokLen": 5
+            }
+          },
+          "name": "point",
+          "type": {
+            "desugaredQualType": "struct Vector2",
+            "qualType": "Vector2",
+            "typeAliasDeclId": "0x5f7a9b31e358"
+          }
+        },
+        {
+          "id": "0x5f7a9b3289a8",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 5817,
+            "col": 61,
+            "tokLen": 6
+          },
+          "range": {
+            "begin": {
+              "offset": 5809,
+              "col": 53,
+              "tokLen": 7
+            },
+            "end": {
+              "offset": 5817,
+              "col": 61,
+              "tokLen": 6
+            }
+          },
+          "name": "center",
+          "type": {
+            "desugaredQualType": "struct Vector2",
+            "qualType": "Vector2",
+            "typeAliasDeclId": "0x5f7a9b31e358"
+          }
+        },
+        {
+          "id": "0x5f7a9b328a28",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 5831,
+            "col": 75,
+            "tokLen": 6
+          },
+          "range": {
+            "begin": {
+              "offset": 5825,
+              "col": 69,
+              "tokLen": 5
+            },
+            "end": {
+              "offset": 5831,
+              "col": 75,
+              "tokLen": 6
+            }
+          },
+          "name": "radius",
+          "type": {
+            "qualType": "float"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b328ec8",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 5908,
+        "line": 74,
+        "col": 12,
+        "tokLen": 27
+      },
+      "range": {
+        "begin": {
+          "offset": 5903,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 5985,
+          "col": 89,
+          "tokLen": 1
+        }
+      },
+      "name": "CheckCollisionPointTriangle",
+      "mangledName": "CheckCollisionPointTriangle",
+      "type": {
+        "qualType": "bool (Vector2, Vector2, Vector2, Vector2)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b328c18",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 5944,
+            "col": 48,
+            "tokLen": 5
+          },
+          "range": {
+            "begin": {
+              "offset": 5936,
+              "col": 40,
+              "tokLen": 7
+            },
+            "end": {
+              "offset": 5944,
+              "col": 48,
+              "tokLen": 5
+            }
+          },
+          "name": "point",
+          "type": {
+            "desugaredQualType": "struct Vector2",
+            "qualType": "Vector2",
+            "typeAliasDeclId": "0x5f7a9b31e358"
+          }
+        },
+        {
+          "id": "0x5f7a9b328c90",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 5959,
+            "col": 63,
+            "tokLen": 2
+          },
+          "range": {
+            "begin": {
+              "offset": 5951,
+              "col": 55,
+              "tokLen": 7
+            },
+            "end": {
+              "offset": 5959,
+              "col": 63,
+              "tokLen": 2
+            }
+          },
+          "name": "p1",
+          "type": {
+            "desugaredQualType": "struct Vector2",
+            "qualType": "Vector2",
+            "typeAliasDeclId": "0x5f7a9b31e358"
+          }
+        },
+        {
+          "id": "0x5f7a9b328d08",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 5971,
+            "col": 75,
+            "tokLen": 2
+          },
+          "range": {
+            "begin": {
+              "offset": 5963,
+              "col": 67,
+              "tokLen": 7
+            },
+            "end": {
+              "offset": 5971,
+              "col": 75,
+              "tokLen": 2
+            }
+          },
+          "name": "p2",
+          "type": {
+            "desugaredQualType": "struct Vector2",
+            "qualType": "Vector2",
+            "typeAliasDeclId": "0x5f7a9b31e358"
+          }
+        },
+        {
+          "id": "0x5f7a9b328d80",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 5983,
+            "col": 87,
+            "tokLen": 2
+          },
+          "range": {
+            "begin": {
+              "offset": 5975,
+              "col": 79,
+              "tokLen": 7
+            },
+            "end": {
+              "offset": 5983,
+              "col": 87,
+              "tokLen": 2
+            }
+          },
+          "name": "p3",
+          "type": {
+            "desugaredQualType": "struct Vector2",
+            "qualType": "Vector2",
+            "typeAliasDeclId": "0x5f7a9b31e358"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b329398",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 6052,
+        "line": 75,
+        "col": 12,
+        "tokLen": 19
+      },
+      "range": {
+        "begin": {
+          "offset": 6047,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 6167,
+          "col": 127,
+          "tokLen": 1
+        }
+      },
+      "name": "CheckCollisionLines",
+      "mangledName": "CheckCollisionLines",
+      "type": {
+        "qualType": "bool (Vector2, Vector2, Vector2, Vector2, Vector2 *)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b329000",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 6080,
+            "col": 40,
+            "tokLen": 9
+          },
+          "range": {
+            "begin": {
+              "offset": 6072,
+              "col": 32,
+              "tokLen": 7
+            },
+            "end": {
+              "offset": 6080,
+              "col": 40,
+              "tokLen": 9
+            }
+          },
+          "name": "startPos1",
+          "type": {
+            "desugaredQualType": "struct Vector2",
+            "qualType": "Vector2",
+            "typeAliasDeclId": "0x5f7a9b31e358"
+          }
+        },
+        {
+          "id": "0x5f7a9b329078",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 6099,
+            "col": 59,
+            "tokLen": 7
+          },
+          "range": {
+            "begin": {
+              "offset": 6091,
+              "col": 51,
+              "tokLen": 7
+            },
+            "end": {
+              "offset": 6099,
+              "col": 59,
+              "tokLen": 7
+            }
+          },
+          "name": "endPos1",
+          "type": {
+            "desugaredQualType": "struct Vector2",
+            "qualType": "Vector2",
+            "typeAliasDeclId": "0x5f7a9b31e358"
+          }
+        },
+        {
+          "id": "0x5f7a9b3290f0",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 6116,
+            "col": 76,
+            "tokLen": 9
+          },
+          "range": {
+            "begin": {
+              "offset": 6108,
+              "col": 68,
+              "tokLen": 7
+            },
+            "end": {
+              "offset": 6116,
+              "col": 76,
+              "tokLen": 9
+            }
+          },
+          "name": "startPos2",
+          "type": {
+            "desugaredQualType": "struct Vector2",
+            "qualType": "Vector2",
+            "typeAliasDeclId": "0x5f7a9b31e358"
+          }
+        },
+        {
+          "id": "0x5f7a9b329168",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 6135,
+            "col": 95,
+            "tokLen": 7
+          },
+          "range": {
+            "begin": {
+              "offset": 6127,
+              "col": 87,
+              "tokLen": 7
+            },
+            "end": {
+              "offset": 6135,
+              "col": 95,
+              "tokLen": 7
+            }
+          },
+          "name": "endPos2",
+          "type": {
+            "desugaredQualType": "struct Vector2",
+            "qualType": "Vector2",
+            "typeAliasDeclId": "0x5f7a9b31e358"
+          }
+        },
+        {
+          "id": "0x5f7a9b329240",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 6153,
+            "col": 113,
+            "tokLen": 14
+          },
+          "range": {
+            "begin": {
+              "offset": 6144,
+              "col": 104,
+              "tokLen": 7
+            },
+            "end": {
+              "offset": 6153,
+              "col": 113,
+              "tokLen": 14
+            }
+          },
+          "name": "collisionPoint",
+          "type": {
+            "qualType": "Vector2 *"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b329728",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 6287,
+        "line": 76,
+        "col": 12,
+        "tokLen": 23
+      },
+      "range": {
+        "begin": {
+          "offset": 6282,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 6363,
+          "col": 88,
+          "tokLen": 1
+        }
+      },
+      "name": "CheckCollisionPointLine",
+      "mangledName": "CheckCollisionPointLine",
+      "type": {
+        "qualType": "bool (Vector2, Vector2, Vector2, int)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b329478",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 6319,
+            "col": 44,
+            "tokLen": 5
+          },
+          "range": {
+            "begin": {
+              "offset": 6311,
+              "col": 36,
+              "tokLen": 7
+            },
+            "end": {
+              "offset": 6319,
+              "col": 44,
+              "tokLen": 5
+            }
+          },
+          "name": "point",
+          "type": {
+            "desugaredQualType": "struct Vector2",
+            "qualType": "Vector2",
+            "typeAliasDeclId": "0x5f7a9b31e358"
+          }
+        },
+        {
+          "id": "0x5f7a9b3294f0",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 6334,
+            "col": 59,
+            "tokLen": 2
+          },
+          "range": {
+            "begin": {
+              "offset": 6326,
+              "col": 51,
+              "tokLen": 7
+            },
+            "end": {
+              "offset": 6334,
+              "col": 59,
+              "tokLen": 2
+            }
+          },
+          "name": "p1",
+          "type": {
+            "desugaredQualType": "struct Vector2",
+            "qualType": "Vector2",
+            "typeAliasDeclId": "0x5f7a9b31e358"
+          }
+        },
+        {
+          "id": "0x5f7a9b329568",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 6346,
+            "col": 71,
+            "tokLen": 2
+          },
+          "range": {
+            "begin": {
+              "offset": 6338,
+              "col": 63,
+              "tokLen": 7
+            },
+            "end": {
+              "offset": 6346,
+              "col": 71,
+              "tokLen": 2
+            }
+          },
+          "name": "p2",
+          "type": {
+            "desugaredQualType": "struct Vector2",
+            "qualType": "Vector2",
+            "typeAliasDeclId": "0x5f7a9b31e358"
+          }
+        },
+        {
+          "id": "0x5f7a9b3295e8",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 6354,
+            "col": 79,
+            "tokLen": 9
+          },
+          "range": {
+            "begin": {
+              "offset": 6350,
+              "col": 75,
+              "tokLen": 3
+            },
+            "end": {
+              "offset": 6354,
+              "col": 79,
+              "tokLen": 9
+            }
+          },
+          "name": "threshold",
+          "type": {
+            "qualType": "int"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b3299f8",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 6509,
+        "line": 77,
+        "col": 12,
+        "tokLen": 11
+      },
+      "range": {
+        "begin": {
+          "offset": 6504,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 6554,
+          "col": 57,
+          "tokLen": 1
+        }
+      },
+      "name": "ExportImage",
+      "mangledName": "ExportImage",
+      "type": {
+        "qualType": "bool (Image, const char *)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b329860",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 6527,
+            "col": 30,
+            "tokLen": 5
+          },
+          "range": {
+            "begin": {
+              "offset": 6521,
+              "col": 24,
+              "tokLen": 5
+            },
+            "end": {
+              "offset": 6527,
+              "col": 30,
+              "tokLen": 5
+            }
+          },
+          "name": "image",
+          "type": {
+            "desugaredQualType": "struct Image",
+            "qualType": "Image",
+            "typeAliasDeclId": "0x5f7a9b31e918"
+          }
+        },
+        {
+          "id": "0x5f7a9b3298e0",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 6546,
+            "col": 49,
+            "tokLen": 8
+          },
+          "range": {
+            "begin": {
+              "offset": 6534,
+              "col": 37,
+              "tokLen": 5
+            },
+            "end": {
+              "offset": 6546,
+              "col": 49,
+              "tokLen": 8
+            }
+          },
+          "name": "fileName",
+          "type": {
+            "qualType": "const char *"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b329bd8",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 6668,
+        "line": 78,
+        "col": 12,
+        "tokLen": 17
+      },
+      "range": {
+        "begin": {
+          "offset": 6663,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 6719,
+          "col": 63,
+          "tokLen": 1
+        }
+      },
+      "name": "ExportImageAsCode",
+      "mangledName": "ExportImageAsCode",
+      "type": {
+        "qualType": "bool (Image, const char *)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b329ac0",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 6692,
+            "col": 36,
+            "tokLen": 5
+          },
+          "range": {
+            "begin": {
+              "offset": 6686,
+              "col": 30,
+              "tokLen": 5
+            },
+            "end": {
+              "offset": 6692,
+              "col": 36,
+              "tokLen": 5
+            }
+          },
+          "name": "image",
+          "type": {
+            "desugaredQualType": "struct Image",
+            "qualType": "Image",
+            "typeAliasDeclId": "0x5f7a9b31e918"
+          }
+        },
+        {
+          "id": "0x5f7a9b329b40",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 6711,
+            "col": 55,
+            "tokLen": 8
+          },
+          "range": {
+            "begin": {
+              "offset": 6699,
+              "col": 43,
+              "tokLen": 5
+            },
+            "end": {
+              "offset": 6711,
+              "col": 55,
+              "tokLen": 8
+            }
+          },
+          "name": "fileName",
+          "type": {
+            "qualType": "const char *"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b329e98",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 6854,
+        "line": 79,
+        "col": 12,
+        "tokLen": 16
+      },
+      "range": {
+        "begin": {
+          "offset": 6849,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 6902,
+          "col": 60,
+          "tokLen": 1
+        }
+      },
+      "name": "ExportFontAsCode",
+      "mangledName": "ExportFontAsCode",
+      "type": {
+        "qualType": "bool (Font, const char *)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b329d00",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 6876,
+            "col": 34,
+            "tokLen": 4
+          },
+          "range": {
+            "begin": {
+              "offset": 6871,
+              "col": 29,
+              "tokLen": 4
+            },
+            "end": {
+              "offset": 6876,
+              "col": 34,
+              "tokLen": 4
+            }
+          },
+          "name": "font",
+          "type": {
+            "desugaredQualType": "struct Font",
+            "qualType": "Font",
+            "typeAliasDeclId": "0x5f7a9b31ebf8"
+          }
+        },
+        {
+          "id": "0x5f7a9b329d80",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 6894,
+            "col": 52,
+            "tokLen": 8
+          },
+          "range": {
+            "begin": {
+              "offset": 6882,
+              "col": 40,
+              "tokLen": 5
+            },
+            "end": {
+              "offset": 6894,
+              "col": 52,
+              "tokLen": 8
+            }
+          },
+          "name": "fileName",
+          "type": {
+            "qualType": "const char *"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b32a0a8",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 6999,
+        "line": 80,
+        "col": 12,
+        "tokLen": 11
+      },
+      "range": {
+        "begin": {
+          "offset": 6994,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 7047,
+          "col": 60,
+          "tokLen": 1
+        }
+      },
+      "name": "TextIsEqual",
+      "mangledName": "TextIsEqual",
+      "type": {
+        "qualType": "bool (const char *, const char *)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b329f68",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 7023,
+            "col": 36,
+            "tokLen": 5
+          },
+          "range": {
+            "begin": {
+              "offset": 7011,
+              "col": 24,
+              "tokLen": 5
+            },
+            "end": {
+              "offset": 7023,
+              "col": 36,
+              "tokLen": 5
+            }
+          },
+          "name": "text1",
+          "type": {
+            "qualType": "const char *"
+          }
+        },
+        {
+          "id": "0x5f7a9b32a010",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 7042,
+            "col": 55,
+            "tokLen": 5
+          },
+          "range": {
+            "begin": {
+              "offset": 7030,
+              "col": 43,
+              "tokLen": 5
+            },
+            "end": {
+              "offset": 7042,
+              "col": 55,
+              "tokLen": 5
+            }
+          },
+          "name": "text2",
+          "type": {
+            "qualType": "const char *"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b32a368",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 7129,
+        "line": 81,
+        "col": 12,
+        "tokLen": 10
+      },
+      "range": {
+        "begin": {
+          "offset": 7124,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 7171,
+          "col": 54,
+          "tokLen": 1
+        }
+      },
+      "name": "ExportMesh",
+      "mangledName": "ExportMesh",
+      "type": {
+        "qualType": "bool (Mesh, const char *)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b32a1d0",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 7145,
+            "col": 28,
+            "tokLen": 4
+          },
+          "range": {
+            "begin": {
+              "offset": 7140,
+              "col": 23,
+              "tokLen": 4
+            },
+            "end": {
+              "offset": 7145,
+              "col": 28,
+              "tokLen": 4
+            }
+          },
+          "name": "mesh",
+          "type": {
+            "desugaredQualType": "struct Mesh",
+            "qualType": "Mesh",
+            "typeAliasDeclId": "0x5f7a9b31ea88"
+          }
+        },
+        {
+          "id": "0x5f7a9b32a250",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 7163,
+            "col": 46,
+            "tokLen": 8
+          },
+          "range": {
+            "begin": {
+              "offset": 7151,
+              "col": 34,
+              "tokLen": 5
+            },
+            "end": {
+              "offset": 7163,
+              "col": 46,
+              "tokLen": 8
+            }
+          },
+          "name": "fileName",
+          "type": {
+            "qualType": "const char *"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b32a688",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 7274,
+        "line": 82,
+        "col": 12,
+        "tokLen": 21
+      },
+      "range": {
+        "begin": {
+          "offset": 7269,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 7328,
+          "col": 66,
+          "tokLen": 1
+        }
+      },
+      "name": "IsModelAnimationValid",
+      "mangledName": "IsModelAnimationValid",
+      "type": {
+        "qualType": "bool (Model, ModelAnimation)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b32a490",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 7302,
+            "col": 40,
+            "tokLen": 5
+          },
+          "range": {
+            "begin": {
+              "offset": 7296,
+              "col": 34,
+              "tokLen": 5
+            },
+            "end": {
+              "offset": 7302,
+              "col": 40,
+              "tokLen": 5
+            }
+          },
+          "name": "model",
+          "type": {
+            "desugaredQualType": "struct Model",
+            "qualType": "Model",
+            "typeAliasDeclId": "0x5f7a9b31e078"
+          }
+        },
+        {
+          "id": "0x5f7a9b32a570",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 7324,
+            "col": 62,
+            "tokLen": 4
+          },
+          "range": {
+            "begin": {
+              "offset": 7309,
+              "col": 47,
+              "tokLen": 14
+            },
+            "end": {
+              "offset": 7324,
+              "col": 62,
+              "tokLen": 4
+            }
+          },
+          "name": "anim",
+          "type": {
+            "desugaredQualType": "struct ModelAnimation",
+            "qualType": "ModelAnimation",
+            "typeAliasDeclId": "0x5f7a9b31e1e8"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b32aa68",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 7406,
+        "line": 83,
+        "col": 12,
+        "tokLen": 21
+      },
+      "range": {
+        "begin": {
+          "offset": 7401,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 7490,
+          "col": 96,
+          "tokLen": 1
+        }
+      },
+      "name": "CheckCollisionSpheres",
+      "mangledName": "CheckCollisionSpheres",
+      "type": {
+        "qualType": "bool (Vector3, float, Vector3, float)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b32a7b0",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 7436,
+            "col": 42,
+            "tokLen": 7
+          },
+          "range": {
+            "begin": {
+              "offset": 7428,
+              "col": 34,
+              "tokLen": 7
+            },
+            "end": {
+              "offset": 7436,
+              "col": 42,
+              "tokLen": 7
+            }
+          },
+          "name": "center1",
+          "type": {
+            "desugaredQualType": "struct Vector3",
+            "qualType": "Vector3",
+            "typeAliasDeclId": "0x5f7a9b31e4c8"
+          }
+        },
+        {
+          "id": "0x5f7a9b32a830",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 7451,
+            "col": 57,
+            "tokLen": 7
+          },
+          "range": {
+            "begin": {
+              "offset": 7445,
+              "col": 51,
+              "tokLen": 5
+            },
+            "end": {
+              "offset": 7451,
+              "col": 57,
+              "tokLen": 7
+            }
+          },
+          "name": "radius1",
+          "type": {
+            "qualType": "float"
+          }
+        },
+        {
+          "id": "0x5f7a9b32a8a8",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 7468,
+            "col": 74,
+            "tokLen": 7
+          },
+          "range": {
+            "begin": {
+              "offset": 7460,
+              "col": 66,
+              "tokLen": 7
+            },
+            "end": {
+              "offset": 7468,
+              "col": 74,
+              "tokLen": 7
+            }
+          },
+          "name": "center2",
+          "type": {
+            "desugaredQualType": "struct Vector3",
+            "qualType": "Vector3",
+            "typeAliasDeclId": "0x5f7a9b31e4c8"
+          }
+        },
+        {
+          "id": "0x5f7a9b32a928",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 7483,
+            "col": 89,
+            "tokLen": 7
+          },
+          "range": {
+            "begin": {
+              "offset": 7477,
+              "col": 83,
+              "tokLen": 5
+            },
+            "end": {
+              "offset": 7483,
+              "col": 89,
+              "tokLen": 7
+            }
+          },
+          "name": "radius2",
+          "type": {
+            "qualType": "float"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b32ad28",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 7545,
+        "line": 84,
+        "col": 12,
+        "tokLen": 19
+      },
+      "range": {
+        "begin": {
+          "offset": 7540,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 7599,
+          "col": 66,
+          "tokLen": 1
+        }
+      },
+      "name": "CheckCollisionBoxes",
+      "mangledName": "CheckCollisionBoxes",
+      "type": {
+        "qualType": "bool (BoundingBox, BoundingBox)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b32aba0",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 7577,
+            "col": 44,
+            "tokLen": 4
+          },
+          "range": {
+            "begin": {
+              "offset": 7565,
+              "col": 32,
+              "tokLen": 11
+            },
+            "end": {
+              "offset": 7577,
+              "col": 44,
+              "tokLen": 4
+            }
+          },
+          "name": "box1",
+          "type": {
+            "desugaredQualType": "struct BoundingBox",
+            "qualType": "BoundingBox",
+            "typeAliasDeclId": "0x5f7a9b31e638"
+          }
+        },
+        {
+          "id": "0x5f7a9b32ac18",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 7595,
+            "col": 62,
+            "tokLen": 4
+          },
+          "range": {
+            "begin": {
+              "offset": 7583,
+              "col": 50,
+              "tokLen": 11
+            },
+            "end": {
+              "offset": 7595,
+              "col": 62,
+              "tokLen": 4
+            }
+          },
+          "name": "box2",
+          "type": {
+            "desugaredQualType": "struct BoundingBox",
+            "qualType": "BoundingBox",
+            "typeAliasDeclId": "0x5f7a9b31e638"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b32b020",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 7691,
+        "line": 85,
+        "col": 12,
+        "tokLen": 23
+      },
+      "range": {
+        "begin": {
+          "offset": 7686,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 7760,
+          "col": 81,
+          "tokLen": 1
+        }
+      },
+      "name": "CheckCollisionBoxSphere",
+      "mangledName": "CheckCollisionBoxSphere",
+      "type": {
+        "qualType": "bool (BoundingBox, Vector3, float)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b32adf0",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 7727,
+            "col": 48,
+            "tokLen": 3
+          },
+          "range": {
+            "begin": {
+              "offset": 7715,
+              "col": 36,
+              "tokLen": 11
+            },
+            "end": {
+              "offset": 7727,
+              "col": 48,
+              "tokLen": 3
+            }
+          },
+          "name": "box",
+          "type": {
+            "desugaredQualType": "struct BoundingBox",
+            "qualType": "BoundingBox",
+            "typeAliasDeclId": "0x5f7a9b31e638"
+          }
+        },
+        {
+          "id": "0x5f7a9b32ae68",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 7740,
+            "col": 61,
+            "tokLen": 6
+          },
+          "range": {
+            "begin": {
+              "offset": 7732,
+              "col": 53,
+              "tokLen": 7
+            },
+            "end": {
+              "offset": 7740,
+              "col": 61,
+              "tokLen": 6
+            }
+          },
+          "name": "center",
+          "type": {
+            "desugaredQualType": "struct Vector3",
+            "qualType": "Vector3",
+            "typeAliasDeclId": "0x5f7a9b31e4c8"
+          }
+        },
+        {
+          "id": "0x5f7a9b32aee8",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 7754,
+            "col": 75,
+            "tokLen": 6
+          },
+          "range": {
+            "begin": {
+              "offset": 7748,
+              "col": 69,
+              "tokLen": 5
+            },
+            "end": {
+              "offset": 7754,
+              "col": 75,
+              "tokLen": 6
+            }
+          },
+          "name": "radius",
+          "type": {
+            "qualType": "float"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b32b178",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 7833,
+        "line": 86,
+        "col": 12,
+        "tokLen": 18
+      },
+      "range": {
+        "begin": {
+          "offset": 7828,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 7856,
+          "col": 35,
+          "tokLen": 1
+        }
+      },
+      "name": "IsAudioDeviceReady",
+      "mangledName": "IsAudioDeviceReady",
+      "type": {
+        "qualType": "bool (void)"
+      }
+    },
+    {
+      "id": "0x5f7a9b32b428",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 7962,
+        "line": 87,
+        "col": 12,
+        "tokLen": 10
+      },
+      "range": {
+        "begin": {
+          "offset": 7957,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 8004,
+          "col": 54,
+          "tokLen": 1
+        }
+      },
+      "name": "ExportWave",
+      "mangledName": "ExportWave",
+      "type": {
+        "qualType": "bool (Wave, const char *)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b32b290",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 7978,
+            "col": 28,
+            "tokLen": 4
+          },
+          "range": {
+            "begin": {
+              "offset": 7973,
+              "col": 23,
+              "tokLen": 4
+            },
+            "end": {
+              "offset": 7978,
+              "col": 28,
+              "tokLen": 4
+            }
+          },
+          "name": "wave",
+          "type": {
+            "desugaredQualType": "struct Wave",
+            "qualType": "Wave",
+            "typeAliasDeclId": "0x5f7a9b31ed68"
+          }
+        },
+        {
+          "id": "0x5f7a9b32b310",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 7996,
+            "col": 46,
+            "tokLen": 8
+          },
+          "range": {
+            "begin": {
+              "offset": 7984,
+              "col": 34,
+              "tokLen": 5
+            },
+            "end": {
+              "offset": 7996,
+              "col": 46,
+              "tokLen": 8
+            }
+          },
+          "name": "fileName",
+          "type": {
+            "qualType": "const char *"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b32b608",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 8085,
+        "line": 88,
+        "col": 12,
+        "tokLen": 16
+      },
+      "range": {
+        "begin": {
+          "offset": 8080,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 8133,
+          "col": 60,
+          "tokLen": 1
+        }
+      },
+      "name": "ExportWaveAsCode",
+      "mangledName": "ExportWaveAsCode",
+      "type": {
+        "qualType": "bool (Wave, const char *)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b32b4f0",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 8107,
+            "col": 34,
+            "tokLen": 4
+          },
+          "range": {
+            "begin": {
+              "offset": 8102,
+              "col": 29,
+              "tokLen": 4
+            },
+            "end": {
+              "offset": 8107,
+              "col": 34,
+              "tokLen": 4
+            }
+          },
+          "name": "wave",
+          "type": {
+            "desugaredQualType": "struct Wave",
+            "qualType": "Wave",
+            "typeAliasDeclId": "0x5f7a9b31ed68"
+          }
+        },
+        {
+          "id": "0x5f7a9b32b570",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 8125,
+            "col": 52,
+            "tokLen": 8
+          },
+          "range": {
+            "begin": {
+              "offset": 8113,
+              "col": 40,
+              "tokLen": 5
+            },
+            "end": {
+              "offset": 8125,
+              "col": 52,
+              "tokLen": 8
+            }
+          },
+          "name": "fileName",
+          "type": {
+            "qualType": "const char *"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b32b828",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 8220,
+        "line": 89,
+        "col": 12,
+        "tokLen": 14
+      },
+      "range": {
+        "begin": {
+          "offset": 8215,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 8246,
+          "col": 38,
+          "tokLen": 1
+        }
+      },
+      "name": "IsSoundPlaying",
+      "mangledName": "IsSoundPlaying",
+      "type": {
+        "qualType": "bool (Sound)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b32b730",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 8241,
+            "col": 33,
+            "tokLen": 5
+          },
+          "range": {
+            "begin": {
+              "offset": 8235,
+              "col": 27,
+              "tokLen": 5
+            },
+            "end": {
+              "offset": 8241,
+              "col": 33,
+              "tokLen": 5
+            }
+          },
+          "name": "sound",
+          "type": {
+            "desugaredQualType": "struct Sound",
+            "qualType": "Sound",
+            "typeAliasDeclId": "0x5f7a9b31eed8"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b32ba48",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 8331,
+        "line": 90,
+        "col": 12,
+        "tokLen": 20
+      },
+      "range": {
+        "begin": {
+          "offset": 8326,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 8363,
+          "col": 44,
+          "tokLen": 1
+        }
+      },
+      "name": "IsMusicStreamPlaying",
+      "mangledName": "IsMusicStreamPlaying",
+      "type": {
+        "qualType": "bool (Music)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b32b950",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 8358,
+            "col": 39,
+            "tokLen": 5
+          },
+          "range": {
+            "begin": {
+              "offset": 8352,
+              "col": 33,
+              "tokLen": 5
+            },
+            "end": {
+              "offset": 8358,
+              "col": 39,
+              "tokLen": 5
+            }
+          },
+          "name": "music",
+          "type": {
+            "desugaredQualType": "struct Music",
+            "qualType": "Music",
+            "typeAliasDeclId": "0x5f7a9b323098"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b32bc68",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 8430,
+        "line": 91,
+        "col": 12,
+        "tokLen": 22
+      },
+      "range": {
+        "begin": {
+          "offset": 8425,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 8471,
+          "col": 53,
+          "tokLen": 1
+        }
+      },
+      "name": "IsAudioStreamProcessed",
+      "mangledName": "IsAudioStreamProcessed",
+      "type": {
+        "qualType": "bool (AudioStream)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b32bb70",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 8465,
+            "col": 47,
+            "tokLen": 6
+          },
+          "range": {
+            "begin": {
+              "offset": 8453,
+              "col": 35,
+              "tokLen": 11
+            },
+            "end": {
+              "offset": 8465,
+              "col": 47,
+              "tokLen": 6
+            }
+          },
+          "name": "stream",
+          "type": {
+            "desugaredQualType": "struct AudioStream",
+            "qualType": "AudioStream",
+            "typeAliasDeclId": "0x5f7a9b323208"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0x5f7a9b32bdb8",
+      "kind": "FunctionDecl",
+      "loc": {
+        "offset": 8553,
+        "line": 92,
+        "col": 12,
+        "tokLen": 20
+      },
+      "range": {
+        "begin": {
+          "offset": 8548,
+          "col": 7,
+          "tokLen": 4
+        },
+        "end": {
+          "offset": 8592,
+          "col": 51,
+          "tokLen": 1
+        }
+      },
+      "name": "IsAudioStreamPlaying",
+      "mangledName": "IsAudioStreamPlaying",
+      "type": {
+        "qualType": "bool (AudioStream)"
+      },
+      "inner": [
+        {
+          "id": "0x5f7a9b32bd28",
+          "kind": "ParmVarDecl",
+          "loc": {
+            "offset": 8586,
+            "col": 45,
+            "tokLen": 6
+          },
+          "range": {
+            "begin": {
+              "offset": 8574,
+              "col": 33,
+              "tokLen": 11
+            },
+            "end": {
+              "offset": 8586,
+              "col": 45,
+              "tokLen": 6
+            }
+          },
+          "name": "stream",
+          "type": {
+            "desugaredQualType": "struct AudioStream",
+            "qualType": "AudioStream",
+            "typeAliasDeclId": "0x5f7a9b323208"
+          }
+        }
+      ]
+    }
+  ]
+}
