@@ -1967,175 +1967,175 @@ pub fn detach_audio_stream_processor(stream AudioStream, processor AudioCallback
 // extra missing bool functions
 
 @[c: 'WindowShouldClose']
-fn window_should_close() bool
+pub fn window_should_close() bool
 
 @[c: 'IsWindowReady']
-fn is_window_ready() bool
+pub fn is_window_ready() bool
 
 @[c: 'IsWindowFullscreen']
-fn is_window_fullscreen() bool
+pub fn is_window_fullscreen() bool
 
 @[c: 'IsWindowHidden']
-fn is_window_hidden() bool
+pub fn is_window_hidden() bool
 
 @[c: 'IsWindowMinimized']
-fn is_window_minimized() bool
+pub fn is_window_minimized() bool
 
 @[c: 'IsWindowMaximized']
-fn is_window_maximized() bool
+pub fn is_window_maximized() bool
 
 @[c: 'IsWindowFocused']
-fn is_window_focused() bool
+pub fn is_window_focused() bool
 
 @[c: 'IsWindowResized']
-fn is_window_resized() bool
+pub fn is_window_resized() bool
 
 @[c: 'IsWindowState']
-fn is_window_state(flag u32) bool
+pub fn is_window_state(flag u32) bool
 
 @[c: 'IsCursorHidden']
-fn is_cursor_hidden() bool
+pub fn is_cursor_hidden() bool
 
 @[c: 'IsCursorOnScreen']
-fn is_cursor_on_screen() bool
+pub fn is_cursor_on_screen() bool
 
 @[c: 'SaveFileData']
-fn save_file_data(filename &i8, data voidptr, bytestowrite u32) bool
+pub fn save_file_data(filename &i8, data voidptr, bytestowrite u32) bool
 
 @[c: 'ExportDataAsCode']
-fn export_data_as_code(data &i8, size u32, filename &i8) bool
+pub fn export_data_as_code(data &i8, size u32, filename &i8) bool
 
 @[c: 'SaveFileText']
-fn save_file_text(filename &i8, text &i8) bool
+pub fn save_file_text(filename &i8, text &i8) bool
 
 @[c: 'FileExists']
-fn file_exists(filename &i8) bool
+pub fn file_exists(filename &i8) bool
 
 @[c: 'DirectoryExists']
-fn directory_exists(dirpath &i8) bool
+pub fn directory_exists(dirpath &i8) bool
 
 @[c: 'IsFileExtension']
-fn is_file_extension(filename &i8, ext &i8) bool
+pub fn is_file_extension(filename &i8, ext &i8) bool
 
 @[c: 'ChangeDirectory']
-fn change_directory(dir &i8) bool
+pub fn change_directory(dir &i8) bool
 
 @[c: 'IsPathFile']
-fn is_path_file(path &i8) bool
+pub fn is_path_file(path &i8) bool
 
 @[c: 'IsFileDropped']
-fn is_file_dropped() bool
+pub fn is_file_dropped() bool
 
 @[c: 'IsKeyPressed']
-fn is_key_pressed(key int) bool
+pub fn is_key_pressed(key int) bool
 
 @[c: 'IsKeyDown']
-fn is_key_down(key int) bool
+pub fn is_key_down(key int) bool
 
 @[c: 'IsKeyReleased']
-fn is_key_released(key int) bool
+pub fn is_key_released(key int) bool
 
 @[c: 'IsKeyUp']
-fn is_key_up(key int) bool
+pub fn is_key_up(key int) bool
 
 @[c: 'IsGamepadAvailable']
-fn is_gamepad_available(gamepad int) bool
+pub fn is_gamepad_available(gamepad int) bool
 
 @[c: 'IsGamepadButtonPressed']
-fn is_gamepad_button_pressed(gamepad int, button int) bool
+pub fn is_gamepad_button_pressed(gamepad int, button int) bool
 
 @[c: 'IsGamepadButtonDown']
-fn is_gamepad_button_down(gamepad int, button int) bool
+pub fn is_gamepad_button_down(gamepad int, button int) bool
 
 @[c: 'IsGamepadButtonReleased']
-fn is_gamepad_button_released(gamepad int, button int) bool
+pub fn is_gamepad_button_released(gamepad int, button int) bool
 
 @[c: 'IsGamepadButtonUp']
-fn is_gamepad_button_up(gamepad int, button int) bool
+pub fn is_gamepad_button_up(gamepad int, button int) bool
 
 @[c: 'IsMouseButtonPressed']
-fn is_mouse_button_pressed(button int) bool
+pub fn is_mouse_button_pressed(button int) bool
 
 @[c: 'IsMouseButtonDown']
-fn is_mouse_button_down(button int) bool
+pub fn is_mouse_button_down(button int) bool
 
 @[c: 'IsMouseButtonReleased']
-fn is_mouse_button_released(button int) bool
+pub fn is_mouse_button_released(button int) bool
 
 @[c: 'IsMouseButtonUp']
-fn is_mouse_button_up(button int) bool
+pub fn is_mouse_button_up(button int) bool
 
 @[c: 'IsGestureDetected']
-fn is_gesture_detected(gesture int) bool
+pub fn is_gesture_detected(gesture int) bool
 
 @[c: 'CheckCollisionRecs']
-fn check_collision_recs(rec1 Rectangle, rec2 Rectangle) bool
+pub fn check_collision_recs(rec1 Rectangle, rec2 Rectangle) bool
 
 @[c: 'CheckCollisionCircles']
-fn check_collision_circles(center1 Vector2, radius1 f32, center2 Vector2, radius2 f32) bool
+pub fn check_collision_circles(center1 Vector2, radius1 f32, center2 Vector2, radius2 f32) bool
 
 @[c: 'CheckCollisionCircleRec']
-fn check_collision_circle_rec(center Vector2, radius f32, rec Rectangle) bool
+pub fn check_collision_circle_rec(center Vector2, radius f32, rec Rectangle) bool
 
 @[c: 'CheckCollisionPointRec']
-fn check_collision_point_rec(point Vector2, rec Rectangle) bool
+pub fn check_collision_point_rec(point Vector2, rec Rectangle) bool
 
 @[c: 'CheckCollisionPointCircle']
-fn check_collision_point_circle(point Vector2, center Vector2, radius f32) bool
+pub fn check_collision_point_circle(point Vector2, center Vector2, radius f32) bool
 
 @[c: 'CheckCollisionPointTriangle']
-fn check_collision_point_triangle(point Vector2, p1 Vector2, p2 Vector2, p3 Vector2) bool
+pub fn check_collision_point_triangle(point Vector2, p1 Vector2, p2 Vector2, p3 Vector2) bool
 
 @[c: 'CheckCollisionLines']
-fn check_collision_lines(startpos1 Vector2, endpos1 Vector2, startpos2 Vector2, endpos2 Vector2, collisionpoint &Vector2) bool
+pub fn check_collision_lines(startpos1 Vector2, endpos1 Vector2, startpos2 Vector2, endpos2 Vector2, collisionpoint &Vector2) bool
 
 @[c: 'CheckCollisionPointLine']
-fn check_collision_point_line(point Vector2, p1 Vector2, p2 Vector2, threshold int) bool
+pub fn check_collision_point_line(point Vector2, p1 Vector2, p2 Vector2, threshold int) bool
 
 @[c: 'ExportImage']
-fn export_image(image Image, filename &i8) bool
+pub fn export_image(image Image, filename &i8) bool
 
 @[c: 'ExportImageAsCode']
-fn export_image_as_code(image Image, filename &i8) bool
+pub fn export_image_as_code(image Image, filename &i8) bool
 
 @[c: 'ExportFontAsCode']
-fn export_font_as_code(font Font, filename &i8) bool
+pub fn export_font_as_code(font Font, filename &i8) bool
 
 @[c: 'TextIsEqual']
-fn text_is_equal(text1 &i8, text2 &i8) bool
+pub fn text_is_equal(text1 &i8, text2 &i8) bool
 
 @[c: 'ExportMesh']
-fn export_mesh(mesh Mesh, filename &i8) bool
+pub fn export_mesh(mesh Mesh, filename &i8) bool
 
 @[c: 'IsModelAnimationValid']
-fn is_model_animation_valid(model Model, anim ModelAnimation) bool
+pub fn is_model_animation_valid(model Model, anim ModelAnimation) bool
 
 @[c: 'CheckCollisionSpheres']
-fn check_collision_spheres(center1 Vector3, radius1 f32, center2 Vector3, radius2 f32) bool
+pub fn check_collision_spheres(center1 Vector3, radius1 f32, center2 Vector3, radius2 f32) bool
 
 @[c: 'CheckCollisionBoxes']
-fn check_collision_boxes(box1 BoundingBox, box2 BoundingBox) bool
+pub fn check_collision_boxes(box1 BoundingBox, box2 BoundingBox) bool
 
 @[c: 'CheckCollisionBoxSphere']
-fn check_collision_box_sphere(box BoundingBox, center Vector3, radius f32) bool
+pub fn check_collision_box_sphere(box BoundingBox, center Vector3, radius f32) bool
 
 @[c: 'IsAudioDeviceReady']
-fn is_audio_device_ready() bool
+pub fn is_audio_device_ready() bool
 
 @[c: 'ExportWave']
-fn export_wave(wave Wave, filename &i8) bool
+pub fn export_wave(wave Wave, filename &i8) bool
 
 @[c: 'ExportWaveAsCode']
-fn export_wave_as_code(wave Wave, filename &i8) bool
+pub fn export_wave_as_code(wave Wave, filename &i8) bool
 
 @[c: 'IsSoundPlaying']
-fn is_sound_playing(sound Sound) bool
+pub fn is_sound_playing(sound Sound) bool
 
 @[c: 'IsMusicStreamPlaying']
-fn is_music_stream_playing(music Music) bool
+pub fn is_music_stream_playing(music Music) bool
 
 @[c: 'IsAudioStreamProcessed']
-fn is_audio_stream_processed(stream AudioStream) bool
+pub fn is_audio_stream_processed(stream AudioStream) bool
 
 @[c: 'IsAudioStreamPlaying']
-fn is_audio_stream_playing(stream AudioStream) bool
+pub fn is_audio_stream_playing(stream AudioStream) bool
