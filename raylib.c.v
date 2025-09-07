@@ -625,15 +625,19 @@ pub enum NPatchLayout {
 	npatch_three_patch_horizontal
 }
 
-type TraceLogCallback = fn (log_level int, text &char, args voidptr)
+pub type Camera = Camera3D
 
-type LoadFileDataCallback = fn (&i8, &u32) &u8
+// Camera type fallback, defaults to Camera3D
 
-type SaveFileDataCallback = fn (&i8, voidptr, u32) bool
+pub type TraceLogCallback = fn (log_level int, text &char, args voidptr)
 
-type LoadFileTextCallback = fn (&i8) &i8
+pub type LoadFileDataCallback = fn (&i8, &u32) &u8
 
-type SaveFileTextCallback = fn (&i8, &i8) bool
+pub type SaveFileDataCallback = fn (&i8, voidptr, u32) bool
+
+pub type LoadFileTextCallback = fn (&i8) &i8
+
+pub type SaveFileTextCallback = fn (&i8, &i8) bool
 
 @[c: 'InitWindow']
 pub fn init_window(width int, height int, title &i8)
