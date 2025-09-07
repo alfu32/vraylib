@@ -663,16 +663,16 @@ pub type Camera = Camera3D
 
 pub type TraceLogCallback = fn (log_level int, text &char, args voidptr)
 
-pub type LoadFileDataCallback = fn (&i8, &u32) &u8
+pub type LoadFileDataCallback = fn (&char, &u32) &u8
 
-pub type SaveFileDataCallback = fn (&i8, voidptr, u32) bool
+pub type SaveFileDataCallback = fn (&char, voidptr, u32) bool
 
-pub type LoadFileTextCallback = fn (&i8) &i8
+pub type LoadFileTextCallback = fn (&char) &char
 
-pub type SaveFileTextCallback = fn (&i8, &i8) bool
+pub type SaveFileTextCallback = fn (&char, &char) bool
 
 @[c: 'InitWindow']
-pub fn init_window(width int, height int, title &i8)
+pub fn init_window(width int, height int, title &char)
 
 @[c: 'CloseWindow']
 pub fn close_window()
@@ -699,7 +699,7 @@ pub fn restore_window()
 pub fn set_window_icon(image Image)
 
 @[c: 'SetWindowTitle']
-pub fn set_window_title(title &i8)
+pub fn set_window_title(title &char)
 
 @[c: 'SetWindowPosition']
 pub fn set_window_position(x int, y int)
@@ -762,13 +762,13 @@ pub fn get_window_position() Vector2
 pub fn get_window_scale_dpi() Vector2
 
 @[c: 'GetMonitorName']
-pub fn get_monitor_name(monitor int) &i8
+pub fn get_monitor_name(monitor int) &char
 
 @[c: 'SetClipboardText']
-pub fn set_clipboard_text(text &i8)
+pub fn set_clipboard_text(text &char)
 
 @[c: 'GetClipboardText']
-pub fn get_clipboard_text() &i8
+pub fn get_clipboard_text() &char
 
 @[c: 'EnableEventWaiting']
 pub fn enable_event_waiting()
@@ -855,16 +855,16 @@ pub fn load_vr_stereo_config(device VrDeviceInfo) VrStereoConfig
 pub fn unload_vr_stereo_config(config VrStereoConfig)
 
 @[c: 'LoadShader']
-pub fn load_shader(vsfilename &i8, fsfilename &i8) Shader
+pub fn load_shader(vsfilename &char, fsfilename &char) Shader
 
 @[c: 'LoadShaderFromMemory']
-pub fn load_shader_from_memory(vscode &i8, fscode &i8) Shader
+pub fn load_shader_from_memory(vscode &char, fscode &char) Shader
 
 @[c: 'GetShaderLocation']
-pub fn get_shader_location(shader Shader, uniformname &i8) int
+pub fn get_shader_location(shader Shader, uniformname &char) int
 
 @[c: 'GetShaderLocationAttrib']
-pub fn get_shader_location_attrib(shader Shader, attribname &i8) int
+pub fn get_shader_location_attrib(shader Shader, attribname &char) int
 
 @[c: 'SetShaderValue']
 pub fn set_shader_value(shader Shader, locindex int, value voidptr, uniformtype int)
@@ -921,14 +921,14 @@ pub fn get_random_value(min int, max int) int
 pub fn set_random_seed(seed u32)
 
 @[c: 'TakeScreenshot']
-pub fn take_screenshot(filename &i8)
+pub fn take_screenshot(filename &char)
 
 @[c: 'SetConfigFlags']
 pub fn set_config_flags(flags u32)
 
 @[c: 'TraceLog']
 @[ctraceLog]
-pub fn tracelog(loglevel int, text ...&i8)
+pub fn tracelog(loglevel int, text ...&char)
 
 @[c: 'SetTraceLogLevel']
 pub fn set_trace_log_level(loglevel int)
@@ -943,7 +943,7 @@ pub fn mem_realloc(ptr voidptr, size int) voidptr
 pub fn mem_free(ptr voidptr)
 
 @[c: 'OpenURL']
-pub fn open_url(url &i8)
+pub fn open_url(url &char)
 
 @[c: 'SetTraceLogCallback']
 pub fn set_trace_log_callback(callback TraceLogCallback)
@@ -961,46 +961,46 @@ pub fn set_load_file_text_callback(callback LoadFileTextCallback)
 pub fn set_save_file_text_callback(callback SaveFileTextCallback)
 
 @[c: 'LoadFileData']
-pub fn load_file_data(filename &i8, bytesread &u32) &u8
+pub fn load_file_data(filename &char, bytesread &u32) &u8
 
 @[c: 'UnloadFileData']
 pub fn unload_file_data(data &u8)
 
 @[c: 'LoadFileText']
-pub fn load_file_text(filename &i8) &i8
+pub fn load_file_text(filename &char) &char
 
 @[c: 'UnloadFileText']
-pub fn unload_file_text(text &i8)
+pub fn unload_file_text(text &char)
 
 @[c: 'GetFileLength']
-pub fn get_file_length(filename &i8) int
+pub fn get_file_length(filename &char) int
 
 @[c: 'GetFileExtension']
-pub fn get_file_extension(filename &i8) &i8
+pub fn get_file_extension(filename &char) &char
 
 @[c: 'GetFileName']
-pub fn get_file_name(filepath &i8) &i8
+pub fn get_file_name(filepath &char) &char
 
 @[c: 'GetFileNameWithoutExt']
-pub fn get_file_name_without_ext(filepath &i8) &i8
+pub fn get_file_name_without_ext(filepath &char) &char
 
 @[c: 'GetDirectoryPath']
-pub fn get_directory_path(filepath &i8) &i8
+pub fn get_directory_path(filepath &char) &char
 
 @[c: 'GetPrevDirectoryPath']
-pub fn get_prev_directory_path(dirpath &i8) &i8
+pub fn get_prev_directory_path(dirpath &char) &char
 
 @[c: 'GetWorkingDirectory']
-pub fn get_working_directory() &i8
+pub fn get_working_directory() &char
 
 @[c: 'GetApplicationDirectory']
-pub fn get_application_directory() &i8
+pub fn get_application_directory() &char
 
 @[c: 'LoadDirectoryFiles']
-pub fn load_directory_files(dirpath &i8) FilePathList
+pub fn load_directory_files(dirpath &char) FilePathList
 
 @[c: 'LoadDirectoryFilesEx']
-pub fn load_directory_files_ex(basepath &i8, filter &i8, scansubdirs bool) FilePathList
+pub fn load_directory_files_ex(basepath &char, filter &char, scansubdirs bool) FilePathList
 
 @[c: 'UnloadDirectoryFiles']
 pub fn unload_directory_files(files FilePathList)
@@ -1012,7 +1012,7 @@ pub fn load_dropped_files() FilePathList
 pub fn unload_dropped_files(files FilePathList)
 
 @[c: 'GetFileModTime']
-pub fn get_file_mod_time(filename &i8) int
+pub fn get_file_mod_time(filename &char) int
 
 @[c: 'CompressData']
 pub fn compress_data(data &u8, datasize int, compdatasize &int) &u8
@@ -1021,10 +1021,10 @@ pub fn compress_data(data &u8, datasize int, compdatasize &int) &u8
 pub fn decompress_data(compdata &u8, compdatasize int, datasize &int) &u8
 
 @[c: 'EncodeDataBase64']
-pub fn encode_data_base64(data &u8, datasize int, outputsize &int) &i8
+pub fn encode_data_base64(data &u8, datasize int, outputsize &int) &char
 
 @[c: 'DecodeDataBase64']
-pub fn decode_data_base64(data &u8, outputsize &int) &u8
+pub fn decode_data_base64(data &char, outputsize &int) &u8
 
 @[c: 'SetExitKey']
 pub fn set_exit_key(key int)
@@ -1036,7 +1036,7 @@ pub fn get_key_pressed() int
 pub fn get_char_pressed() int
 
 @[c: 'GetGamepadName']
-pub fn get_gamepad_name(gamepad int) &i8
+pub fn get_gamepad_name(gamepad int) &char
 
 @[c: 'GetGamepadButtonPressed']
 pub fn get_gamepad_button_pressed() int
@@ -1252,16 +1252,16 @@ pub fn draw_poly_lines_ex(center Vector2, sides int, radius f32, rotation f32, l
 pub fn get_collision_rec(rec1 Rectangle, rec2 Rectangle) Rectangle
 
 @[c: 'LoadImage']
-pub fn load_image(filename &i8) Image
+pub fn load_image(filename &char) Image
 
 @[c: 'LoadImageRaw']
-pub fn load_image_raw(filename &i8, width int, height int, format int, headersize int) Image
+pub fn load_image_raw(filename &char, width int, height int, format int, headersize int) Image
 
 @[c: 'LoadImageAnim']
-pub fn load_image_anim(filename &i8, frames &int) Image
+pub fn load_image_anim(filename &char, frames &int) Image
 
 @[c: 'LoadImageFromMemory']
-pub fn load_image_from_memory(filetype &i8, filedata &u8, datasize int) Image
+pub fn load_image_from_memory(filetype &char, filedata &u8, datasize int) Image
 
 @[c: 'LoadImageFromTexture']
 pub fn load_image_from_texture(texture Texture2D) Image
@@ -1300,10 +1300,10 @@ pub fn image_copy(image Image) Image
 pub fn image_from_image(image Image, rec Rectangle) Image
 
 @[c: 'ImageText']
-pub fn image_text(text &i8, fontsize int, color Color) Image
+pub fn image_text(text &char, fontsize int, color Color) Image
 
 @[c: 'ImageTextEx']
-pub fn image_text_ex(font Font, text &i8, fontsize f32, spacing f32, tint Color) Image
+pub fn image_text_ex(font Font, text &char, fontsize f32, spacing f32, tint Color) Image
 
 @[c: 'ImageFormat']
 pub fn image_format(image &Image, newformat int)
@@ -1426,13 +1426,13 @@ pub fn image_draw_rectangle_lines(dst &Image, rec Rectangle, thick int, color Co
 pub fn image_draw(dst &Image, src Image, srcrec Rectangle, dstrec Rectangle, tint Color)
 
 @[c: 'ImageDrawText']
-pub fn image_draw_text(dst &Image, text &i8, posx int, posy int, fontsize int, color Color)
+pub fn image_draw_text(dst &Image, text &char, posx int, posy int, fontsize int, color Color)
 
 @[c: 'ImageDrawTextEx']
-pub fn image_draw_text_ex(dst &Image, font Font, text &i8, position Vector2, fontsize f32, spacing f32, tint Color)
+pub fn image_draw_text_ex(dst &Image, font Font, text &char, position Vector2, fontsize f32, spacing f32, tint Color)
 
 @[c: 'LoadTexture']
-pub fn load_texture(filename &i8) Texture2D
+pub fn load_texture(filename &char) Texture2D
 
 @[c: 'LoadTextureFromImage']
 pub fn load_texture_from_image(image Image) Texture2D
@@ -1531,16 +1531,16 @@ pub fn get_pixel_data_size(width int, height int, format int) int
 pub fn get_font_default() Font
 
 @[c: 'LoadFont']
-pub fn load_font(filename &i8) Font
+pub fn load_font(filename &char) Font
 
 @[c: 'LoadFontEx']
-pub fn load_font_ex(filename &i8, fontsize int, fontchars &int, glyphcount int) Font
+pub fn load_font_ex(filename &char, fontsize int, fontchars &int, glyphcount int) Font
 
 @[c: 'LoadFontFromImage']
 pub fn load_font_from_image(image Image, key Color, firstchar int) Font
 
 @[c: 'LoadFontFromMemory']
-pub fn load_font_from_memory(filetype &i8, filedata &u8, datasize int, fontsize int, fontchars &int, glyphcount int) Font
+pub fn load_font_from_memory(filetype &char, filedata &u8, datasize int, fontsize int, fontchars &int, glyphcount int) Font
 
 @[c: 'LoadFontData']
 pub fn load_font_data(filedata &u8, datasize int, fontsize int, fontchars &int, glyphcount int, type_ int) &GlyphInfo
@@ -1558,13 +1558,13 @@ pub fn unload_font(font Font)
 pub fn draw_fps(posx int, posy int)
 
 @[c: 'DrawText']
-pub fn draw_text(text &i8, posx int, posy int, fontsize int, color Color)
+pub fn draw_text(text &char, posx int, posy int, fontsize int, color Color)
 
 @[c: 'DrawTextEx']
-pub fn draw_text_ex(font Font, text &i8, position Vector2, fontsize f32, spacing f32, tint Color)
+pub fn draw_text_ex(font Font, text &char, position Vector2, fontsize f32, spacing f32, tint Color)
 
 @[c: 'DrawTextPro']
-pub fn draw_text_pro(font Font, text &i8, position Vector2, origin Vector2, rotation f32, fontsize f32, spacing f32, tint Color)
+pub fn draw_text_pro(font Font, text &char, position Vector2, origin Vector2, rotation f32, fontsize f32, spacing f32, tint Color)
 
 @[c: 'DrawTextCodepoint']
 pub fn draw_text_codepoint(font Font, codepoint int, position Vector2, fontsize f32, tint Color)
@@ -1573,10 +1573,10 @@ pub fn draw_text_codepoint(font Font, codepoint int, position Vector2, fontsize 
 pub fn draw_text_codepoints(font Font, codepoints &int, count int, position Vector2, fontsize f32, spacing f32, tint Color)
 
 @[c: 'MeasureText']
-pub fn measure_text(text &i8, fontsize int) int
+pub fn measure_text(text &char, fontsize int) int
 
 @[c: 'MeasureTextEx']
-pub fn measure_text_ex(font Font, text &i8, fontsize f32, spacing f32) Vector2
+pub fn measure_text_ex(font Font, text &char, fontsize f32, spacing f32) Vector2
 
 @[c: 'GetGlyphIndex']
 pub fn get_glyph_index(font Font, codepoint int) int
@@ -1588,65 +1588,65 @@ pub fn get_glyph_info(font Font, codepoint int) GlyphInfo
 pub fn get_glyph_atlas_rec(font Font, codepoint int) Rectangle
 
 @[c: 'LoadCodepoints']
-pub fn load_codepoints(text &i8, count &int) &int
+pub fn load_codepoints(text &char, count &int) &int
 
 @[c: 'UnloadCodepoints']
 pub fn unload_codepoints(codepoints &int)
 
 @[c: 'GetCodepointCount']
-pub fn get_codepoint_count(text &i8) int
+pub fn get_codepoint_count(text &char) int
 
 @[c: 'GetCodepoint']
-pub fn get_codepoint(text &i8, bytesprocessed &int) int
+pub fn get_codepoint(text &char, bytesprocessed &int) int
 
 @[c: 'CodepointToUTF8']
-pub fn codepoint_to_utf8(codepoint int, bytesize &int) &i8
+pub fn codepoint_to_utf8(codepoint int, bytesize &int) &char
 
 @[c: 'TextCodepointsToUTF8']
-pub fn text_codepoints_to_utf8(codepoints &int, length int) &i8
+pub fn text_codepoints_to_utf8(codepoints &int, length int) &char
 
 @[c: 'TextCopy']
-pub fn text_copy(dst &i8, src &i8) int
+pub fn text_copy(dst &char, src &char) int
 
 @[c: 'TextLength']
-pub fn text_length(text &i8) u32
+pub fn text_length(text &char) u32
 
 @[c: 'TextFormat']
 @[ctextFormat]
-pub fn textformat(text ...&i8) &i8
+pub fn textformat(text ...&char) &char
 
 @[c: 'TextSubtext']
-pub fn text_subtext(text &i8, position int, length int) &i8
+pub fn text_subtext(text &char, position int, length int) &char
 
 @[c: 'TextReplace']
-pub fn text_replace(text &i8, replace &i8, by &i8) &i8
+pub fn text_replace(text &char, replace &char, by &char) &char
 
 @[c: 'TextInsert']
-pub fn text_insert(text &i8, insert &i8, position int) &i8
+pub fn text_insert(text &char, insert &char, position int) &char
 
 @[c: 'TextJoin']
-pub fn text_join(textlist &&u8, count int, delimiter &i8) &i8
+pub fn text_join(textlist &&char, count int, delimiter &char) &char
 
 @[c: 'TextSplit']
-pub fn text_split(text &i8, delimiter i8, count &int) &&u8
+pub fn text_split(text &char, delimiter char, count &int) &&char
 
 @[c: 'TextAppend']
-pub fn text_append(text &i8, append &i8, position &int)
+pub fn text_append(text &char, append &char, position &int)
 
 @[c: 'TextFindIndex']
-pub fn text_find_index(text &i8, find &i8) int
+pub fn text_find_index(text &char, find &char) int
 
 @[c: 'TextToUpper']
-pub fn text_to_upper(text &i8) &i8
+pub fn text_to_upper(text &char) &char
 
 @[c: 'TextToLower']
-pub fn text_to_lower(text &i8) &i8
+pub fn text_to_lower(text &char) &char
 
 @[c: 'TextToPascal']
-pub fn text_to_pascal(text &i8) &i8
+pub fn text_to_pascal(text &char) &char
 
 @[c: 'TextToInteger']
-pub fn text_to_integer(text &i8) int
+pub fn text_to_integer(text &char) int
 
 @[c: 'DrawLine3D']
 pub fn draw_line3D(startpos Vector3, endpos Vector3, color Color)
@@ -1712,7 +1712,7 @@ pub fn draw_ray(ray Ray, color Color)
 pub fn draw_grid(slices int, spacing f32)
 
 @[c: 'LoadModel']
-pub fn load_model(filename &i8) Model
+pub fn load_model(filename &char) Model
 
 @[c: 'LoadModelFromMesh']
 pub fn load_model_from_mesh(mesh Mesh) Model
@@ -1805,7 +1805,7 @@ pub fn gen_mesh_heightmap(heightmap Image, size Vector3) Mesh
 pub fn gen_mesh_cubicmap(cubicmap Image, cubesize Vector3) Mesh
 
 @[c: 'LoadMaterials']
-pub fn load_materials(filename &i8, materialcount &int) &Material
+pub fn load_materials(filename &char, materialcount &int) &Material
 
 @[c: 'LoadMaterialDefault']
 pub fn load_material_default() Material
@@ -1820,7 +1820,7 @@ pub fn set_material_texture(material &Material, maptype int, texture Texture2D)
 pub fn set_model_mesh_material(model &Model, meshid int, materialid int)
 
 @[c: 'LoadModelAnimations']
-pub fn load_model_animations(filename &i8, animcount &u32) &ModelAnimation
+pub fn load_model_animations(filename &char, animcount &u32) &ModelAnimation
 
 @[c: 'UpdateModelAnimation']
 pub fn update_model_animation(model Model, anim ModelAnimation, frame int)
@@ -1858,13 +1858,13 @@ pub fn close_audio_device()
 pub fn set_master_volume(volume f32)
 
 @[c: 'LoadWave']
-pub fn load_wave(filename &i8) Wave
+pub fn load_wave(filename &char) Wave
 
 @[c: 'LoadWaveFromMemory']
-pub fn load_wave_from_memory(filetype &i8, filedata &u8, datasize int) Wave
+pub fn load_wave_from_memory(filetype &char, filedata &u8, datasize int) Wave
 
 @[c: 'LoadSound']
-pub fn load_sound(filename &i8) Sound
+pub fn load_sound(filename &char) Sound
 
 @[c: 'LoadSoundFromWave']
 pub fn load_sound_from_wave(wave Wave) Sound
@@ -1924,10 +1924,10 @@ pub fn load_wave_samples(wave Wave) &f32
 pub fn unload_wave_samples(samples &f32)
 
 @[c: 'LoadMusicStream']
-pub fn load_music_stream(filename &i8) Music
+pub fn load_music_stream(filename &char) Music
 
 @[c: 'LoadMusicStreamFromMemory']
-pub fn load_music_stream_from_memory(filetype &i8, data &u8, datasize int) Music
+pub fn load_music_stream_from_memory(filetype &char, data &u8, datasize int) Music
 
 @[c: 'UnloadMusicStream']
 pub fn unload_music_stream(music Music)
@@ -2043,28 +2043,28 @@ pub fn is_cursor_hidden() bool
 pub fn is_cursor_on_screen() bool
 
 @[c: 'SaveFileData']
-pub fn save_file_data(filename &i8, data voidptr, bytestowrite u32) bool
+pub fn save_file_data(filename &char, data voidptr, bytestowrite u32) bool
 
 @[c: 'ExportDataAsCode']
-pub fn export_data_as_code(data &i8, size u32, filename &i8) bool
+pub fn export_data_as_code(data &char, size u32, filename &char) bool
 
 @[c: 'SaveFileText']
-pub fn save_file_text(filename &i8, text &i8) bool
+pub fn save_file_text(filename &char, text &char) bool
 
 @[c: 'FileExists']
-pub fn file_exists(filename &i8) bool
+pub fn file_exists(filename &char) bool
 
 @[c: 'DirectoryExists']
-pub fn directory_exists(dirpath &i8) bool
+pub fn directory_exists(dirpath &char) bool
 
 @[c: 'IsFileExtension']
-pub fn is_file_extension(filename &i8, ext &i8) bool
+pub fn is_file_extension(filename &char, ext &char) bool
 
 @[c: 'ChangeDirectory']
-pub fn change_directory(dir &i8) bool
+pub fn change_directory(dir &char) bool
 
 @[c: 'IsPathFile']
-pub fn is_path_file(path &i8) bool
+pub fn is_path_file(path &char) bool
 
 @[c: 'IsFileDropped']
 pub fn is_file_dropped() bool
@@ -2136,19 +2136,19 @@ pub fn check_collision_lines(startpos1 Vector2, endpos1 Vector2, startpos2 Vecto
 pub fn check_collision_point_line(point Vector2, p1 Vector2, p2 Vector2, threshold int) bool
 
 @[c: 'ExportImage']
-pub fn export_image(image Image, filename &i8) bool
+pub fn export_image(image Image, filename &char) bool
 
 @[c: 'ExportImageAsCode']
-pub fn export_image_as_code(image Image, filename &i8) bool
+pub fn export_image_as_code(image Image, filename &char) bool
 
 @[c: 'ExportFontAsCode']
-pub fn export_font_as_code(font Font, filename &i8) bool
+pub fn export_font_as_code(font Font, filename &char) bool
 
 @[c: 'TextIsEqual']
-pub fn text_is_equal(text1 &i8, text2 &i8) bool
+pub fn text_is_equal(text1 &char, text2 &char) bool
 
 @[c: 'ExportMesh']
-pub fn export_mesh(mesh Mesh, filename &i8) bool
+pub fn export_mesh(mesh Mesh, filename &char) bool
 
 @[c: 'IsModelAnimationValid']
 pub fn is_model_animation_valid(model Model, anim ModelAnimation) bool
@@ -2166,10 +2166,10 @@ pub fn check_collision_box_sphere(box BoundingBox, center Vector3, radius f32) b
 pub fn is_audio_device_ready() bool
 
 @[c: 'ExportWave']
-pub fn export_wave(wave Wave, filename &i8) bool
+pub fn export_wave(wave Wave, filename &char) bool
 
 @[c: 'ExportWaveAsCode']
-pub fn export_wave_as_code(wave Wave, filename &i8) bool
+pub fn export_wave_as_code(wave Wave, filename &char) bool
 
 @[c: 'IsSoundPlaying']
 pub fn is_sound_playing(sound Sound) bool
