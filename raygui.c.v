@@ -2,6 +2,7 @@
 module vraylib
 
 struct C.GuiStyleProp {
+pub mut:
 	control_id     u16 @[c: 'controlId']
 	property_id    u16 @[c: 'propertyId']
 	property_value int @[c: 'propertyValue']
@@ -146,175 +147,175 @@ pub enum GuiColorPickerProperty {
 }
 
 @[c: 'GuiEnable']
-fn gui_enable()
+pub fn gui_enable()
 
 @[c: 'GuiDisable']
-fn gui_disable()
+pub fn gui_disable()
 
 @[c: 'GuiLock']
-fn gui_lock()
+pub fn gui_lock()
 
 @[c: 'GuiUnlock']
-fn gui_unlock()
+pub fn gui_unlock()
 
 @[c: 'GuiSetAlpha']
-fn gui_set_alpha(alpha f32)
+pub fn gui_set_alpha(alpha f32)
 
 @[c: 'GuiSetState']
-fn gui_set_state(state int)
+pub fn gui_set_state(state int)
 
 @[c: 'GuiGetState']
-fn gui_get_state() int
+pub fn gui_get_state() int
 
 @[c: 'GuiSetFont']
-fn gui_set_font(font Font)
+pub fn gui_set_font(font Font)
 
 @[c: 'GuiGetFont']
-fn gui_get_font() Font
+pub fn gui_get_font() Font
 
 @[c: 'GuiSetStyle']
-fn gui_set_style(control int, property int, value int)
+pub fn gui_set_style(control int, property int, value int)
 
 @[c: 'GuiGetStyle']
-fn gui_get_style(control int, property int) int
+pub fn gui_get_style(control int, property int) int
 
 @[c: 'GuiLoadStyle']
-fn gui_load_style(filename &i8)
+pub fn gui_load_style(filename &i8)
 
 @[c: 'GuiLoadStyleDefault']
-fn gui_load_style_default()
+pub fn gui_load_style_default()
 
 @[c: 'GuiEnableTooltip']
-fn gui_enable_tooltip()
+pub fn gui_enable_tooltip()
 
 @[c: 'GuiDisableTooltip']
-fn gui_disable_tooltip()
+pub fn gui_disable_tooltip()
 
 @[c: 'GuiSetTooltip']
-fn gui_set_tooltip(tooltip &i8)
+pub fn gui_set_tooltip(tooltip &i8)
 
 @[c: 'GuiIconText']
-fn gui_iconText(iconid int, text &i8) &i8
+pub fn gui_iconText(iconid int, text &i8) &i8
 
 @[c: 'GuiSetIconScale']
-fn gui_set_icon_scale(scale int)
+pub fn gui_set_icon_scale(scale int)
 
 @[c: 'GuiGetIcons']
-fn gui_get_icons() &u32
+pub fn gui_get_icons() &u32
 
 @[c: 'GuiLoadIcons']
-fn gui_load_icons(filename &i8, loadiconsname bool) &&u8
+pub fn gui_load_icons(filename &i8, loadiconsname bool) &&u8
 
 @[c: 'GuiDrawIcon']
-fn gui_draw_icon(iconid int, posx int, posy int, pixelsize int, color Color)
+pub fn gui_draw_icon(iconid int, posx int, posy int, pixelsize int, color Color)
 
 @[c: 'GuiGetTextWidth']
-fn gui_get_text_width(text &i8) int
+pub fn gui_get_text_width(text &i8) int
 
 @[c: 'GuiWindowBox']
-fn gui_window_box(bounds Rectangle, title &i8) int
+pub fn gui_window_box(bounds Rectangle, title &i8) int
 
 @[c: 'GuiGroupBox']
-fn gui_group_box(bounds Rectangle, text &i8) int
+pub fn gui_group_box(bounds Rectangle, text &i8) int
 
 @[c: 'GuiLine']
-fn gui_line(bounds Rectangle, text &i8) int
+pub fn gui_line(bounds Rectangle, text &i8) int
 
 @[c: 'GuiPanel']
-fn gui_panel(bounds Rectangle, text &i8) int
+pub fn gui_panel(bounds Rectangle, text &i8) int
 
 @[c: 'GuiTabBar']
-fn gui_tab_bar(bounds Rectangle, text &&u8, count int, active &int) int
+pub fn gui_tab_bar(bounds Rectangle, text &&u8, count int, active &int) int
 
 @[c: 'GuiScrollPanel']
-fn gui_scroll_panel(bounds Rectangle, text &i8, content Rectangle, scroll &Vector2, view &Rectangle) int
+pub fn gui_scroll_panel(bounds Rectangle, text &i8, content Rectangle, scroll &Vector2, view &Rectangle) int
 
 @[c: 'GuiLabel']
-fn gui_label(bounds Rectangle, text &i8) int
+pub fn gui_label(bounds Rectangle, text &i8) int
 
 @[c: 'GuiButton']
-fn gui_button(bounds Rectangle, text &i8) int
+pub fn gui_button(bounds Rectangle, text &i8) int
 
 @[c: 'GuiLabelButton']
-fn gui_label_button(bounds Rectangle, text &i8) int
+pub fn gui_label_button(bounds Rectangle, text &i8) int
 
 @[c: 'GuiToggle']
-fn gui_toggle(bounds Rectangle, text &i8, active &bool) int
+pub fn gui_toggle(bounds Rectangle, text &i8, active &bool) int
 
 @[c: 'GuiToggleGroup']
-fn gui_toggle_group(bounds Rectangle, text &i8, active &int) int
+pub fn gui_toggle_group(bounds Rectangle, text &i8, active &int) int
 
 @[c: 'GuiToggleSlider']
-fn gui_toggle_slider(bounds Rectangle, text &i8, active &int) int
+pub fn gui_toggle_slider(bounds Rectangle, text &i8, active &int) int
 
 @[c: 'GuiCheckBox']
-fn gui_check_box(bounds Rectangle, text &i8, checked &bool) int
+pub fn gui_check_box(bounds Rectangle, text &i8, checked &bool) int
 
 @[c: 'GuiComboBox']
-fn gui_combo_box(bounds Rectangle, text &i8, active &int) int
+pub fn gui_combo_box(bounds Rectangle, text &i8, active &int) int
 
 @[c: 'GuiDropdownBox']
-fn gui_dropdown_box(bounds Rectangle, text &i8, active &int, editmode bool) int
+pub fn gui_dropdown_box(bounds Rectangle, text &i8, active &int, editmode bool) int
 
 @[c: 'GuiSpinner']
-fn gui_spinner(bounds Rectangle, text &i8, value &int, minvalue int, maxvalue int, editmode bool) int
+pub fn gui_spinner(bounds Rectangle, text &i8, value &int, minvalue int, maxvalue int, editmode bool) int
 
 @[c: 'GuiValueBox']
-fn gui_value_box(bounds Rectangle, text &i8, value &int, minvalue int, maxvalue int, editmode bool) int
+pub fn gui_value_box(bounds Rectangle, text &i8, value &int, minvalue int, maxvalue int, editmode bool) int
 
 @[c: 'GuiValueBoxFloat']
-fn gui_value_box_float(bounds Rectangle, text &i8, textvalue &i8, value &f32, editmode bool) int
+pub fn gui_value_box_float(bounds Rectangle, text &i8, textvalue &i8, value &f32, editmode bool) int
 
 @[c: 'GuiTextBox']
-fn gui_text_box(bounds Rectangle, text &i8, textsize int, editmode bool) int
+pub fn gui_text_box(bounds Rectangle, text &i8, textsize int, editmode bool) int
 
 @[c: 'GuiSlider']
-fn gui_slider(bounds Rectangle, textleft &i8, textright &i8, value &f32, minvalue f32, maxvalue f32) int
+pub fn gui_slider(bounds Rectangle, textleft &i8, textright &i8, value &f32, minvalue f32, maxvalue f32) int
 
 @[c: 'GuiSliderBar']
-fn gui_slider_bar(bounds Rectangle, textleft &i8, textright &i8, value &f32, minvalue f32, maxvalue f32) int
+pub fn gui_slider_bar(bounds Rectangle, textleft &i8, textright &i8, value &f32, minvalue f32, maxvalue f32) int
 
 @[c: 'GuiProgressBar']
-fn gui_progress_bar(bounds Rectangle, textleft &i8, textright &i8, value &f32, minvalue f32, maxvalue f32) int
+pub fn gui_progress_bar(bounds Rectangle, textleft &i8, textright &i8, value &f32, minvalue f32, maxvalue f32) int
 
 @[c: 'GuiStatusBar']
-fn gui_status_bar(bounds Rectangle, text &i8) int
+pub fn gui_status_bar(bounds Rectangle, text &i8) int
 
 @[c: 'GuiDummyRec']
-fn gui_dummy_rec(bounds Rectangle, text &i8) int
+pub fn gui_dummy_rec(bounds Rectangle, text &i8) int
 
 @[c: 'GuiGrid']
-fn gui_grid(bounds Rectangle, text &i8, spacing f32, subdivs int, mousecell &Vector2) int
+pub fn gui_grid(bounds Rectangle, text &i8, spacing f32, subdivs int, mousecell &Vector2) int
 
 @[c: 'GuiListView']
-fn gui_list_view(bounds Rectangle, text &i8, scrollindex &int, active &int) int
+pub fn gui_list_view(bounds Rectangle, text &i8, scrollindex &int, active &int) int
 
 @[c: 'GuiListViewEx']
-fn gui_list_view_ex(bounds Rectangle, text &&u8, count int, scrollindex &int, active &int, focus &int) int
+pub fn gui_list_view_ex(bounds Rectangle, text &&u8, count int, scrollindex &int, active &int, focus &int) int
 
 @[c: 'GuiMessageBox']
-fn gui_message_box(bounds Rectangle, title &i8, message &i8, buttons &i8) int
+pub fn gui_message_box(bounds Rectangle, title &i8, message &i8, buttons &i8) int
 
 @[c: 'GuiTextInputBox']
-fn gui_text_input_box(bounds Rectangle, title &i8, message &i8, buttons &i8, text &i8, textmaxsize int, secretviewactive &bool) int
+pub fn gui_text_input_box(bounds Rectangle, title &i8, message &i8, buttons &i8, text &i8, textmaxsize int, secretviewactive &bool) int
 
 @[c: 'GuiColorPicker']
-fn gui_color_picker(bounds Rectangle, text &i8, color &Color) int
+pub fn gui_color_picker(bounds Rectangle, text &i8, color &Color) int
 
 @[c: 'GuiColorPanel']
-fn gui_color_panel(bounds Rectangle, text &i8, color &Color) int
+pub fn gui_color_panel(bounds Rectangle, text &i8, color &Color) int
 
 @[c: 'GuiColorBarAlpha']
-fn gui_color_bar_alpha(bounds Rectangle, text &i8, alpha &f32) int
+pub fn gui_color_bar_alpha(bounds Rectangle, text &i8, alpha &f32) int
 
 @[c: 'GuiColorBarHue']
-fn gui_color_bar_hue(bounds Rectangle, text &i8, value &f32) int
+pub fn gui_color_bar_hue(bounds Rectangle, text &i8, value &f32) int
 
 @[c: 'GuiColorPickerHSV']
-fn gui_color_picker_hsv(bounds Rectangle, text &i8, colorhsv &Vector3) int
+pub fn gui_color_picker_hsv(bounds Rectangle, text &i8, colorhsv &Vector3) int
 
 @[c: 'GuiColorPanelHSV']
-fn gui_color_panel_hsv(bounds Rectangle, text &i8, colorhsv &Vector3) int
+pub fn gui_color_panel_hsv(bounds Rectangle, text &i8, colorhsv &Vector3) int
 
 enum GuiIconName {
 	icon_none                    = 0

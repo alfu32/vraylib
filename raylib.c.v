@@ -2,17 +2,20 @@
 module vraylib
 
 pub struct Vector2 {
+pub mut:
 	x f32
 	y f32
 }
 
 pub struct Vector3 {
+pub mut:
 	x f32
 	y f32
 	z f32
 }
 
 pub struct Vector4 {
+pub mut:
 	x f32
 	y f32
 	z f32
@@ -22,6 +25,7 @@ pub struct Vector4 {
 type Quaternion = Vector4
 
 pub struct Matrix {
+pub mut:
 	m0  f32
 	m4  f32
 	m8  f32
@@ -41,6 +45,7 @@ pub struct Matrix {
 }
 
 pub struct Color {
+pub mut:
 	r u8
 	g u8
 	b u8
@@ -48,6 +53,7 @@ pub struct Color {
 }
 
 pub struct Rectangle {
+pub mut:
 	x      f32
 	y      f32
 	width  f32
@@ -55,6 +61,7 @@ pub struct Rectangle {
 }
 
 pub struct Image {
+pub mut:
 	data    voidptr
 	width   int
 	height  int
@@ -63,6 +70,7 @@ pub struct Image {
 }
 
 pub struct Texture {
+pub mut:
 	id      u32
 	width   int
 	height  int
@@ -74,6 +82,7 @@ type Texture2D = Texture
 type TextureCubemap = Texture
 
 pub struct RenderTexture {
+pub mut:
 	id      u32
 	texture Texture
 	depth   Texture
@@ -82,6 +91,7 @@ pub struct RenderTexture {
 type RenderTexture2D = RenderTexture
 
 pub struct NPatchInfo {
+pub mut:
 	source Rectangle
 	left   int
 	top    int
@@ -91,6 +101,7 @@ pub struct NPatchInfo {
 }
 
 pub struct GlyphInfo {
+pub mut:
 	value    int
 	offsetX  int
 	offsetY  int
@@ -99,6 +110,7 @@ pub struct GlyphInfo {
 }
 
 pub struct Font {
+pub mut:
 	baseSize     int
 	glyphCount   int
 	glyphPadding int
@@ -108,6 +120,7 @@ pub struct Font {
 }
 
 pub struct Camera3D {
+pub mut:
 	position   Vector3
 	target     Vector3
 	up         Vector3
@@ -116,6 +129,7 @@ pub struct Camera3D {
 }
 
 pub struct Camera2D {
+pub mut:
 	offset   Vector2
 	target   Vector2
 	rotation f32
@@ -123,6 +137,7 @@ pub struct Camera2D {
 }
 
 pub struct Mesh {
+pub mut:
 	vertexCount   int
 	triangleCount int
 	vertices      &f32
@@ -141,34 +156,40 @@ pub struct Mesh {
 }
 
 pub struct Shader {
+pub mut:
 	id   u32
 	locs &int
 }
 
 pub struct MaterialMap {
+pub mut:
 	texture Texture2D
 	color   Color
 	value   f32
 }
 
 pub struct Material {
+pub mut:
 	shader Shader
 	maps   &MaterialMap
 	params [4]f32
 }
 
 pub struct Transform {
+pub mut:
 	translation Vector3
 	rotation    Quaternion
 	scale       Vector3
 }
 
 pub struct BoneInfo {
+pub mut:
 	name   [32]i8
 	parent int
 }
 
 pub struct Model {
+pub mut:
 	transform     Matrix
 	meshCount     int
 	materialCount int
@@ -181,6 +202,7 @@ pub struct Model {
 }
 
 pub struct ModelAnimation {
+pub mut:
 	boneCount  int
 	frameCount int
 	bones      &BoneInfo
@@ -188,11 +210,13 @@ pub struct ModelAnimation {
 }
 
 pub struct Ray {
+pub mut:
 	position  Vector3
 	direction Vector3
 }
 
 pub struct RayCollision {
+pub mut:
 	hit      bool
 	distance f32
 	point    Vector3
@@ -200,11 +224,13 @@ pub struct RayCollision {
 }
 
 pub struct BoundingBox {
+pub mut:
 	min Vector3
 	max Vector3
 }
 
 pub struct Wave {
+pub mut:
 	frameCount u32
 	sampleRate u32
 	sampleSize u32
@@ -213,6 +239,7 @@ pub struct Wave {
 }
 
 pub struct AudioStream {
+pub mut:
 	buffer     &RAudioBuffer
 	processor  &RAudioProcessor
 	sampleRate u32
@@ -221,11 +248,13 @@ pub struct AudioStream {
 }
 
 pub struct Sound {
+pub mut:
 	stream     AudioStream
 	frameCount u32
 }
 
 pub struct Music {
+pub mut:
 	stream     AudioStream
 	frameCount u32
 	looping    bool
@@ -234,6 +263,7 @@ pub struct Music {
 }
 
 pub struct VrDeviceInfo {
+pub mut:
 	hResolution            int
 	vResolution            int
 	hScreenSize            f32
@@ -247,6 +277,7 @@ pub struct VrDeviceInfo {
 }
 
 pub struct VrStereoConfig {
+pub mut:
 	projection        [2]Matrix
 	viewOffset        [2]Matrix
 	leftLensCenter    [2]f32
@@ -258,6 +289,7 @@ pub struct VrStereoConfig {
 }
 
 pub struct FilePathList {
+pub mut:
 	capacity u32
 	count    u32
 	paths    &&u8
