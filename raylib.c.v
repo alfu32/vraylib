@@ -1194,13 +1194,13 @@ pub fn get_world_to_screen2d(position Vector2, camera Camera2D) Vector2 {
 
 fn C.SetTargetFPS(fps int)
 @[inline]
-pub fn set_target_f_p_s(fps int) {
+pub fn set_target_fps(fps int) {
 	C.SetTargetFPS(fps)
 }
 
 fn C.GetFPS() int
 @[inline]
-pub fn get_f_p_s() int {
+pub fn get_fps() int {
 	return C.GetFPS()
 }
 
