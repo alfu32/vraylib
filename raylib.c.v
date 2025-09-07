@@ -625,7 +625,8 @@ pub enum NPatchLayout {
 	npatch_three_patch_horizontal
 }
 
-type TraceLogCallback = Va_list
+type TraceLogCallback = fn (log_level int, text &char, args voidptr)
+
 type LoadFileDataCallback = fn (&i8, &u32) &u8
 
 type SaveFileDataCallback = fn (&i8, voidptr, u32) bool
