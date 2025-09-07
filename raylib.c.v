@@ -258,7 +258,7 @@ pub const shader_uniform_int = 4
 pub const shader_uniform_ivec2 = 5
 pub const shader_uniform_ivec3 = 6
 pub const shader_uniform_ivec4 = 7
-pub const shader_uniform_sampler_2d = 8
+pub const shader_uniform_sampler2d = 8
 pub const shader_attrib_float = 0
 pub const shader_attrib_vec2 = 1
 pub const shader_attrib_vec3 = 2
@@ -1002,19 +1002,19 @@ pub fn end_drawing() {
 
 fn C.BeginMode2D(camera Camera2D)
 @[inline]
-pub fn begin_mode_2d(camera Camera2D) {
+pub fn begin_mode2d(camera Camera2D) {
 	C.BeginMode2D(camera)
 }
 
 fn C.EndMode2D()
 @[inline]
-pub fn end_mode_2d() {
+pub fn end_mode2d() {
 	C.EndMode2D()
 }
 
 fn C.BeginMode3D(camera Camera3D)
 @[inline]
-pub fn begin_mode_3d(camera Camera3D) {
+pub fn begin_mode3d(camera Camera3D) {
 	C.BeginMode3D(camera)
 }
 
@@ -1164,7 +1164,7 @@ pub fn get_camera_matrix(camera Camera) Matrix {
 
 fn C.GetCameraMatrix2D(camera Camera2D) Matrix
 @[inline]
-pub fn get_camera_matrix_2d(camera Camera2D) Matrix {
+pub fn get_camera_matrix2d(camera Camera2D) Matrix {
 	return C.GetCameraMatrix2D(camera)
 }
 
@@ -1176,7 +1176,7 @@ pub fn get_world_to_screen(position Vector3, camera Camera) Vector2 {
 
 fn C.GetScreenToWorld2D(position Vector2, camera Camera2D) Vector2
 @[inline]
-pub fn get_screen_to_world_2d(position Vector2, camera Camera2D) Vector2 {
+pub fn get_screen_to_world2d(position Vector2, camera Camera2D) Vector2 {
 	return C.GetScreenToWorld2D(position, camera)
 }
 
@@ -1188,7 +1188,7 @@ pub fn get_world_to_screen_ex(position Vector3, camera Camera, width int, height
 
 fn C.GetWorldToScreen2D(position Vector2, camera Camera2D) Vector2
 @[inline]
-pub fn get_world_to_screen_2d(position Vector2, camera Camera2D) Vector2 {
+pub fn get_world_to_screen2d(position Vector2, camera Camera2D) Vector2 {
 	return C.GetWorldToScreen2D(position, camera)
 }
 
@@ -2893,25 +2893,25 @@ pub fn text_to_integer(text &char) int {
 
 fn C.DrawLine3D(startPos Vector3, endPos Vector3, color Color)
 @[inline]
-pub fn draw_line_3d(startPos Vector3, endPos Vector3, color Color) {
+pub fn draw_line3d(startPos Vector3, endPos Vector3, color Color) {
 	C.DrawLine3D(startPos, endPos, color)
 }
 
 fn C.DrawPoint3D(position Vector3, color Color)
 @[inline]
-pub fn draw_point_3d(position Vector3, color Color) {
+pub fn draw_point3d(position Vector3, color Color) {
 	C.DrawPoint3D(position, color)
 }
 
 fn C.DrawCircle3D(center Vector3, radius f32, rotationAxis Vector3, rotationAngle f32, color Color)
 @[inline]
-pub fn draw_circle_3d(center Vector3, radius f32, rotationAxis Vector3, rotationAngle f32, color Color) {
+pub fn draw_circle3d(center Vector3, radius f32, rotationAxis Vector3, rotationAngle f32, color Color) {
 	C.DrawCircle3D(center, radius, rotationAxis, rotationAngle, color)
 }
 
 fn C.DrawTriangle3D(v1 Vector3, v2 Vector3, v3 Vector3, color Color)
 @[inline]
-pub fn draw_triangle_3d(v1 Vector3, v2 Vector3, v3 Vector3, color Color) {
+pub fn draw_triangle3d(v1 Vector3, v2 Vector3, v3 Vector3, color Color) {
 	C.DrawTriangle3D(v1, v2, v3, color)
 }
 
