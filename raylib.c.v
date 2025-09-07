@@ -263,6 +263,12 @@ pub struct FilePathList {
 	paths    &&u8
 }
 
+// Opaque structs declaration
+// NOTE: Actual structs are defined internally in raudio module
+pub struct RAudioBuffer {}
+
+pub struct RAudioProcessor {}
+
 pub enum ConfigFlags {
 	flag_vsync_hint               = 64
 	flag_fullscreen_mode          = 2
