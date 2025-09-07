@@ -631,6 +631,9 @@ type SaveFileTextCallback = fn (&i8, &i8) bool
 @[c: 'InitWindow']
 pub fn init_window(width int, height int, title &i8)
 
+@[c: 'WindowShouldClose']
+pub fn window_should_close(width int, height int, title &i8)
+
 @[c: 'CloseWindow']
 pub fn close_window()
 
