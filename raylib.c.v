@@ -339,6 +339,12 @@ type LoadFileTextCallback = voidptr
 type SaveFileTextCallback = voidptr
 type AudioCallback = voidptr
 
+// C enum binding
+pub enum CameraProjection {
+	perspective = 0
+	orthographic
+}
+
 struct C.Vector2 {
 	x f32
 	y f32
