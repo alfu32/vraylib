@@ -1,5 +1,5 @@
 @[translated]
-module main
+module vraylib
 
 pub struct Vector2 {
 	x f32
